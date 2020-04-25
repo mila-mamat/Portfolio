@@ -1,13 +1,57 @@
+body {
+   	
+}
+.full-page {
+    min-height:100vh;
+    padding-top:5vh;
+}
+.a {
+    border:red 0.1px solid
+}
+.b{
+    border:blue 0.1px solid
+}
+
+h1, h2, h3, h4, h5, h6 {
+   
+    font-weight: 800;
+    letter-spacing: 0.3em;
+    line-height: 1em;
+    margin: 0 0 1em 0;
+    text-transform: uppercase;
+}
+
+/* start of nav bar  */
+nav {
+    background-color:transparent
+}
+
 nav img {
     height:25px;
     width:25px;
 }
-nav {
-    clear:both
+
+@media screen and (min-width: 768px){
+    nav.scrolled{
+        background-color:#2e3842;
+        -webkit-transition: background-color 1000ms linear;
+        -ms-transition: background-color 1000ms linear;
+        transition: background-color 1000ms linear;
+    }
+
+
 }
+
 /* nav menu style change based on scroll spy */
-        .nav-link.active {
-            color: blue !important
+.nav-link{
+    color:white !important;
+    border: solid 2px transparent
+} 
+
+
+        .nav-link.active, .nav-link:hover {
+            border-bottom: white solid 2px;
+
         }
 
 /* navbar dropdown list in md, sm screen  */
@@ -26,8 +70,89 @@ nav {
     }
 }
 
-.full-page {
-    height:100vh;
-    padding-top:70px;
- 
+/* end of nav bar  */
+
+
+
+/* start of intro page  */
+#intro{
+    color:white;
+    /* font-family: 'Raleway', sans-serif; */
+    
 }
+#intro::after {
+    background-color: #2e3141;
+    content: "";
+    background-image: linear-gradient(to left, rgba(46, 49, 65, 0.4), rgba(46, 49, 65, 0.4)), url("./img/blur-cellphone-close-up-device-196646.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -2;   
+
+}
+
+#intro .contact-icon {
+    font-size: 2rem;
+    color:white;
+    margin:0.5rem;
+}
+
+
+#intro h2 {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight:800;
+    padding: 2rem ;
+    position: relative;
+    z-index: 1;
+}
+
+    #intro h2:before, #intro h2:after {
+        background:white;
+        content: '';
+        display: block;
+        height: 2px;
+        position: absolute;
+        width: 100%;
+        
+    }
+
+    #intro h2:before {
+        top: 0;
+        left: 0;
+
+    }
+
+    #intro h2:after {
+        bottom: 0;
+        right: 0;
+
+    }
+
+
+
+
+
+
+
+
+#intro .img-thumbnail{
+    background-color: transparent;
+    border:none;
+}
+
+@media screen and (min-width:768px){
+    #intro h1{
+        font-size: 5rem;
+    }
+}
+/* end of intro page  */

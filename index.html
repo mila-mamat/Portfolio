@@ -14,13 +14,20 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Vesper+Libre:wght@900&display=swap" rel="stylesheet">
+    
+
+     <!-- Place your kit's code here -->
+     <script src="https://kit.fontawesome.com/f365fc375d.js" crossorigin="anonymous"></script>
+     <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all" rel="stylesheet">
+     <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all" rel="stylesheet">
+     <link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet">
+  
   </head>
+
   <body data-spy="scroll" data-target="#navbar" data-offset="100">
     <!-- nav bar -->
-    <nav
-      class="navbar navbar-expand-md fixed-top navbar-light bg-light"
-      id="navbar"
-    >
+    <nav class="navbar navbar-expand-md fixed-top p-0" id="navbar">
       <!-- menu button for navbar in md,sm screen  -->
       <button
         class="navbar-toggler"
@@ -33,27 +40,27 @@
         <span><img alt="logo" src="./logo without slogan.png" /></span>
       </button>
       <!-- menus in navbar, will change color based on scrollspy -->
-      <div class="collapse navbar-collapse" id="nav-menu">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item">
+      <div class="collapse navbar-collapse " id="nav-menu">
+        <ul class="navbar-nav mx-auto mt-lg-0 ">
+          <li class="nav-item m-2">
             <a class="navbar-brand" href="#intro"
               ><img alt="logo" src="./logo without slogan.png"
             /></a>
           </li>
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item">
+          <li class="nav-item m-2"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item m-2">
             <a class="nav-link" href="#skills">Skills</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item m-2">
             <a class="nav-link" href="#projects">Project</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#education">Education</a>
+          <li class="nav-item m-2">
+            <a class="nav-link" href="#resume">Resume</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item m-2">
             <a class="nav-link" href="#contact">Contact</a>
           </li>
-          <li class="nav-item border-top">
+          <li class="nav-item mx-3 border-top">
             <a class="nav-link d-md-none" href="#intro">Back to the top</a>
           </li>
         </ul>
@@ -61,36 +68,58 @@
     </nav>
 
     <!-- contents  -->
-    <div class="full-page border-bottom">
+    <div class="container full-page border-bottom d-flex" id="intro">
       <!-- the intro page  -->
-      <h4 id="intro">Intro</h4>
-      <p style="height: 200px;">...</p>
+      <div class="mx-auto my-auto text-center" >
+        <h2>Mila Mamat</h2>
+        <p>
+          A highly motivated full-stack web developer
+        </p>
+        <!-- link container -->
+        <div>
+          <a href="https://github.com/mila-mamat" target="_blank" >
+            <i class="contact-icon fab fa-github "></i>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/mila-mamat-a7a344115/"
+            target="_blank"
+          >
+          <i class="contact-icon fab fa-linkedin"></i>
+          </a>
+
+          <a href="mailto:mila.windsor@gmail.com" target="_blank">
+            <i class="contact-icon fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
     </div>
 
     <!-- about me  -->
-    <div class="full-page border-bottom">
-      <h4 id="about">About Me</h4>
-      <p style="height: 200px;">...</p>
+    <div class="container full-page border-bottom pt-5" id="about">
+      <h4>About Me</h4>
+      
+   
     </div>
 
-    <div class="full-page border-bottom">
-      <h4 id="skills">Skills</h4>
-      <p style="height: 200px;">...</p>
+    <div class="container full-page border-bottom pt-5" id="skills">
+      <h4>Skills</h4>
+   
     </div>
 
-    <div class="full-page border-bottom">
-      <h4 id="projects">Projects</h4>
-      <p style="height: 200px;">...</p>
+    <div class="container full-page border-bottom pt-5" id="projects">
+      <h4>Projects</h4>
+   
     </div>
 
-    <div class="full-page border-bottom">
-      <h4 id="education">Education</h4>
+    <div class="container full-page border-bottom pt-5" id="resume">
+      <h4>Resume</h4>
       <p style="height: 800px;">...</p>
     </div>
 
-    <div class="full-page border-bottom">
-      <h4 id="contact">Contact Me</h4>
-      <p style="height: 200px;">...</p>
+    <div class="container full-page border-bottom pt-5" id="contact">
+      <h4>Contact Me</h4>
+   
     </div>
 
     <script
@@ -108,5 +137,6 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <script src="./main.js"></script>
   </body>
 </html>
