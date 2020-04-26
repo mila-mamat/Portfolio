@@ -1,158 +1,203 @@
 body {
-   	
+    /* background-color: #2e3141; */
+/* background-color: rgba(46, 49, 65,0.5); */
 }
 .full-page {
-    min-height:100vh;
-    padding-top:5vh;
-}
-.a {
-    border:red 0.1px solid
-}
-.b{
-    border:blue 0.1px solid
+  min-height: 100vh;
+  padding:5vh 0 0 0 
 }
 
-h1, h2, h3, h4, h5, h6 {
-   
-    font-weight: 800;
-    letter-spacing: 0.3em;
-    line-height: 1em;
-    margin: 0 0 1em 0;
-    text-transform: uppercase;
+.a {
+  border: red 0.1px solid;
+}
+
+.b {
+  border: blue 0.1px solid;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 800;
+  letter-spacing: 0.3em;
+  line-height: 1em;
+  margin: 0 0 1em 0;
+  text-transform: uppercase;
 }
 
 /* start of nav bar  */
 nav {
-    background-color:transparent
+  background-color: transparent;
 }
 
 nav img {
-    height:25px;
-    width:25px;
+  height: 25px;
+  width: 25px;
 }
 
-@media screen and (min-width: 768px){
-    nav.scrolled{
-        background-color:#2e3842;
-        -webkit-transition: background-color 1000ms linear;
-        -ms-transition: background-color 1000ms linear;
-        transition: background-color 1000ms linear;
-    }
-
-
+@media screen and (min-width: 768px) {
+  nav.scrolled {
+    background-color: #2e3842;
+    -webkit-transition: background-color 1s linear;
+    -ms-transition: background-color 1s linear;
+    transition: background-color 1s linear;
+  }
 }
 
 /* nav menu style change based on scroll spy */
-.nav-link{
-    color:white !important;
-    border: solid 2px transparent
-} 
+.nav-link {
+  color: white !important;
+  border: solid 2px transparent;
+}
 
-
-        .nav-link.active, .nav-link:hover {
-            border-bottom: white solid 2px;
-
-        }
+.nav-link.active,
+.nav-link:hover {
+  border-bottom: white solid 2px;
+}
 
 /* navbar dropdown list in md, sm screen  */
-@media screen and (max-width:767px){
-    /* remove brand logo  */
-    #nav-menu ul li:first-child {
-        display:none 
-    }
-    /* display back to top instead  */
-    #nav-menu ul li:last-child {
-        padding-top: 15px ;
-        margin-top: 15px ;
-        /* we doest want the color of back to the top change due to the scrollspy. REMEMBER TO CHANGE THE COLOR WHEN THE FONT COLOR IS DECIDED */
-        color:black;  
+@media screen and (max-width: 767px) {
+  /* remove brand logo  */
+  #nav-menu ul li:first-child {
+    display: none;
+  }
 
-    }
+  /* display back to top instead  */
+  #nav-menu ul li:last-child {
+    padding-top: 15px;
+    margin-top: 15px;
+    /* we doest want the color of back to the top change due to the scrollspy. REMEMBER TO CHANGE THE COLOR WHEN THE FONT COLOR IS DECIDED */
+    color: black;
+  }
 }
 
 /* end of nav bar  */
 
 
 
+
 /* start of intro page  */
-#intro{
-    color:white;
-    /* font-family: 'Raleway', sans-serif; */
-    
-}
-#intro::after {
-    background-color: #2e3141;
-    content: "";
-    background-image: linear-gradient(to left, rgba(46, 49, 65, 0.4), rgba(46, 49, 65, 0.4)), url("./img/blur-cellphone-close-up-device-196646.jpg");
-    background-position: center;
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -2;   
-
+#intro {
+  color: white;
+  /* background-color: #2e3842; */
+  font-family: 'Raleway', sans-serif;
+ 
 }
 
-#intro .contact-icon {
-    font-size: 2rem;
-    color:white;
-    margin:0.5rem;
+#bg {
+  background-color: #2e3141;
+  content: "";
+  background-image: linear-gradient(
+      to top,
+      rgba(46, 49, 65, 0.4),
+      rgba(46, 49, 65, 0.4)
+    ),
+    url("./img/blur-cellphone-close-up-device-196646.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  opacity:1;
+
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index:-1;
 }
 
+#intro .icon {
+  font-size: 2rem;
+  color: white;
+  margin: 0.5rem;
+}
 
 #intro h2 {
-    display: inline-block;
-    font-size: 2rem;
-    font-weight:800;
-    padding: 2rem ;
-    position: relative;
-    z-index: 1;
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 800;
+  padding: 2rem;
+  position: relative;
+  z-index: 1;
 }
 
-    #intro h2:before, #intro h2:after {
-        background:white;
-        content: '';
-        display: block;
-        height: 2px;
-        position: absolute;
-        width: 100%;
-        
-    }
-
-    #intro h2:before {
-        top: 0;
-        left: 0;
-
-    }
-
-    #intro h2:after {
-        bottom: 0;
-        right: 0;
-
-    }
-
-
-
-
-
-
-
-
-#intro .img-thumbnail{
-    background-color: transparent;
-    border:none;
+#intro h2:before,
+#intro h2:after {
+  background: white;
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  width: 100%;
 }
 
-@media screen and (min-width:768px){
-    #intro h1{
-        font-size: 5rem;
-    }
+#intro h2:before {
+  top: 0;
+  left: 0;
 }
+
+#intro h2:after {
+  bottom: 0;
+  right: 0;
+}
+
+
+
+.fade-in{
+  text-align: center;
+  -webkit-animation: fadein 5s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 5s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 5s;
+  /* Internet Explorer */
+  -o-animation: fadein 5s;
+  /* Opera < 12.1 */
+  animation: fadein 5s;
+
+}
+
+
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+#intro .img-thumbnail {
+  background-color: transparent;
+  border: none;
+}
+
+
 /* end of intro page  */
+
+/* start of about me  */
+#about img {
+  height:150px;
+  width:150px;
+}
+
+
+
+
+/* .card img{
+  max-width: 100px;
+  height: auto;
+
+} */
