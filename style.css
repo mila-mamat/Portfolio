@@ -2,9 +2,15 @@ body {
     /* background-color: #2e3141; */
 /* background-color: rgba(46, 49, 65,0.5); */
 }
+
 .full-page {
   min-height: 100vh;
-  padding:5vh 0 0 0 
+  width:100vw;
+  padding:0
+}
+
+.half-page {
+  min-height: 50vh;
 }
 
 .a {
@@ -32,7 +38,8 @@ h6 {
 
 /* start of nav bar  */
 nav {
-  background-color: transparent;
+  background-color: #2e3842;
+  /* width:100vw */
 }
 
 nav img {
@@ -41,8 +48,12 @@ nav img {
 }
 
 @media screen and (min-width: 768px) {
+  nav {
+    background-color: transparent;
+  }
+
   nav.scrolled {
-    background-color: #2e3842;
+    background-color:  #8ac0c0;
     -webkit-transition: background-color 1s linear;
     -ms-transition: background-color 1s linear;
     transition: background-color 1s linear;
@@ -84,34 +95,22 @@ nav img {
 /* start of intro page  */
 #intro {
   color: white;
-  /* background-color: #2e3842; */
   font-family: 'Raleway', sans-serif;
  
 }
 
 #bg {
-  background-color: #2e3141;
   content: "";
-  background-image: linear-gradient(
-      to top,
-      rgba(46, 49, 65, 0.4),
-      rgba(46, 49, 65, 0.4)
-    ),
-    url("./img/blur-cellphone-close-up-device-196646.jpg");
-  background-position: center;
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  opacity:1;
-
+  background: radial-gradient(
+    #c9e5dd,
+    #8ac0c0
+    );
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   position: absolute;
-  z-index:-1;
+  z-index: -1;
 }
 
 #intro .icon {
@@ -121,6 +120,7 @@ nav img {
 }
 
 #intro h2 {
+  color:black;
   display: inline-block;
   font-size: 2rem;
   font-weight: 800;
@@ -152,7 +152,6 @@ nav img {
 
 
 .fade-in{
-  text-align: center;
   -webkit-animation: fadein 5s;
   /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 5s;
@@ -188,10 +187,19 @@ nav img {
 /* end of intro page  */
 
 /* start of about me  */
+
 #about img {
   height:150px;
   width:150px;
 }
+
+
+#about .about-me {
+  min-height:50vh;
+  /* background-color: #c9e5dd; */
+
+}
+
 
 
 
@@ -201,3 +209,19 @@ nav img {
   height: auto;
 
 } */
+
+#skills {
+  background: linear-gradient(
+    to bottom,
+    #c9e5dd,
+    #5f8faa
+    );
+}
+
+#projects {
+  background-color:   #5f8faa;
+}
+#projects img {
+  opacity:0.5;
+  background-color: #2e3842;
+}
