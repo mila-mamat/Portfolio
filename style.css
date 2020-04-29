@@ -1,12 +1,12 @@
 body {
-    /* background-color: #2e3141; */
-/* background-color: rgba(46, 49, 65,0.5); */
+  /* background-color: #2e3141; */
+  /* background-color: rgba(46, 49, 65,0.5); */
 }
 
 .full-page {
   min-height: 100vh;
-  width:100vw;
-  padding:0
+  width: 100vw;
+  padding: 0;
 }
 
 .half-page {
@@ -20,8 +20,6 @@ body {
 .b {
   border: blue 0.1px solid;
 }
-
-
 
 h1,
 h2,
@@ -53,7 +51,7 @@ nav img {
   }
 
   nav.scrolled {
-    background-color:  #8ac0c0;
+    background-color:#5f8faa;
     -webkit-transition: background-color 1s linear;
     -ms-transition: background-color 1s linear;
     transition: background-color 1s linear;
@@ -89,29 +87,22 @@ nav img {
 
 /* end of nav bar  */
 
-
-
-
 /* start of intro page  */
 #intro {
   color: white;
-  font-family: 'Raleway', sans-serif;
- 
+  font-family: "Raleway", sans-serif;
 }
-
+/* 
 #bg {
   content: "";
-  background: radial-gradient(
-    #c9e5dd,
-    #8ac0c0
-    );
+  background: radial-gradient( #8ac0c0,#c9e5dd);
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   position: absolute;
   z-index: -1;
-}
+} */
 
 #intro .icon {
   font-size: 2rem;
@@ -120,7 +111,7 @@ nav img {
 }
 
 #intro h2 {
-  color:black;
+  color: black;
   display: inline-block;
   font-size: 2rem;
   font-weight: 800;
@@ -149,9 +140,7 @@ nav img {
   right: 0;
 }
 
-
-
-.fade-in{
+.fade-in {
   -webkit-animation: fadein 5s;
   /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 5s;
@@ -161,10 +150,7 @@ nav img {
   -o-animation: fadein 5s;
   /* Opera < 12.1 */
   animation: fadein 5s;
-
 }
-
-
 
 @keyframes fadein {
   from {
@@ -176,33 +162,24 @@ nav img {
   }
 }
 
-
-
 #intro .img-thumbnail {
   background-color: transparent;
   border: none;
 }
-
 
 /* end of intro page  */
 
 /* start of about me  */
 
 #about img {
-  height:150px;
-  width:150px;
+  height: 150px;
+  width: 150px;
 }
-
 
 #about .about-me {
-  min-height:50vh;
+  min-height: 50vh;
   /* background-color: #c9e5dd; */
-
 }
-
-
-
-
 
 /* .card img{
   max-width: 100px;
@@ -210,18 +187,39 @@ nav img {
 
 } */
 
+
+#projects img {
+  width: 100%;
+  height: auto;
+  /* background-color: #2e3842; */
+}
+
+
+
+
+/* page background color  */ 
+
+
+/* page background color  */ 
+
+#intro {
+  background: radial-gradient( #8ac0c0,#c9e5dd);
+}
+#about{
+  background-color: #b6d9d4;
+}
+
 #skills {
-  background: linear-gradient(
-    to bottom,
-    #c9e5dd,
-    #5f8faa
-    );
+  background: linear-gradient(to bottom, #b6d9d4, #5f8faa);
 }
 
 #projects {
-  background-color:   #5f8faa;
+  background-color: #5f8faa;
 }
-#projects img {
-  opacity:0.5;
-  background-color: #2e3842;
+#resume {
+  background: linear-gradient(to bottom, #5f8faa, #c1ccd8);
+}
+
+#contact {
+  background-color: #c1ccd8;
 }
