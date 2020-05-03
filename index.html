@@ -8,10 +8,11 @@
   <title>Mila Mamat</title>
   <link rel="icon" type="image/ico" href="./logo without slogan.png" />
   <!-- bootstrap cdn -->
+  <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
   <link rel="stylesheet" href="./style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Vesper+Libre:wght@900&display=swap" rel="stylesheet">
+
 
 
   <!-- Place your kit's code here -->
@@ -20,6 +21,8 @@
   <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all"
     rel="stylesheet">
   <link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap" rel="stylesheet">
 
 </head>
 
@@ -58,36 +61,55 @@
   </nav>
 
   <!-- contents  -->
-  <div class="full-page d-flex" id="intro">
-<!-- haven't decide if I want a background pic or not  -->
-    <!-- <div id="bg"></div> -->
-    <!-- the intro page  -->
-    <div class="mx-auto my-auto text-center fade-in">
-      <h2>Mila Mamat</h2>
-      <h6>
-        A highly motivated full-stack web developer
-      </h6>
-      <!-- link each page-->
-      <div>
-        <a href="https://github.com/mila-mamat" target="_blank">
-          <i class="icon fab fa-github "></i>
-        </a>
+  <section class="full-page d-flex align-items-center" id="intro">
 
-        <a href="https://www.linkedin.com/in/mila-mamat-a7a344115/" target="_blank">
-          <i class="icon fab fa-linkedin"></i>
-        </a>
 
-        <a href="mailto:mila.windsor@gmail.com" target="_blank">
-          <i class="icon fab fa-instagram"></i>
-        </a>
-      </div>
-      <a class="mx-auto " href="#about"> <i class="icon fas fa-angle-down"></i></a>
+    <div class="container text-center">
+      <h2 class=""><span>M</span>i<br>la</h2>
+      <h5 class="text-center">web developer</h5>
+
     </div>
-  </div>
+  </section>
 
   <!-- about me  -->
-  <div class="full-page" id="about">
-    <div class="half-page pt-5">
+  <section class="full-page pt-5 bg-light d-flex align-items-center" id="about">
+    <div class="bg"></div>
+    <div class="container mt-3">
+      <div class="row">
+        <div class="col-md-6 d-flex" id="me-img">
+          <img src="./img/selfie.jpg" class="a img-thumbnail d-block mx-auto">
+          <div class="overlay white"></div>
+          <div class="overlay green"></div>
+        </div>
+
+
+        <div class="col-md-6 my-auto">
+          <h3 class="font-weight-bold my-3">About Me</h3>
+
+          <p class="text ">A self-motivated web developer with profound knowledge of HTML, CSS, Java,
+            JavaScript,JSON,
+            AJAX, MySQL and other related systems.
+            <br />
+            <br />
+
+            Enjoy the process of coding, solving analytically complex problems and pushing my
+            limits. Recently earned a certificate in Full Stack Development to find an entry-level programmer position
+            with opportunities for career growth in the long-term.
+            <br />
+            <br />
+
+            A bit more about me, self-learned and taught statistics for three years, and helped more than 1000 students
+            with their academic
+            success through my strong organizational, curriculum design, and communication skills.
+
+            <br />
+            <br />
+          </p>
+
+        </div>
+      </div>
+    </div>
+    <!-- <div class="half-page pt-5">
       <img src="./logo without slogan.png" class="rounded-circle mx-auto d-block my-5" alt="avatar">
       <h3 class="font-weight-bold text-center mb-3">About Me</h3>
     </div>
@@ -104,7 +126,8 @@
         <br />
         <br />
 
-        A bit more about me, self-learned and taught statistics for three years, and helped more than 1000 students with
+        A bit more about me, self-learned and taught statistics for three years, and helped more than 1000 students
+        with
         their academic
         success through my strong organizational, curriculum design, and communication skills.
         <br />
@@ -115,19 +138,18 @@
         <br />
 
       </p>
+    </div> -->
 
-    </div>
+  </section>
 
-
-  </div>
-
-  <div class="full-page" id="skills">
-    <div class="container pt-5">
+  <!-- skills  -->
+  <section class="full-page pt-5" id="skills">
+    <div class="container mt-5">
       <h3 class="font-weight-bold text-center mt-5">Skills Overview</h3>
       <div class="section-intro mx-auto text-center mb-5 text-secondary">Below is a quick overview of my main
-        technical skill
-        sets and tools I use. Want to find out more about my experience? <a href="resume.html">Check out my online
-          resume</a>.</div>
+        technical skill sets and tools I use. Want to find out more about my
+        experience? <a href="resume.html">Check out my online resume. </a>
+      </div>
 
       <div class="skills-blocks mx-auto pt-5">
         <div class="row">
@@ -164,20 +186,76 @@
         </div>
       </div>
     </div>
-  </div>
-  </div>
+  </section>
 
-  <div class="full-page pt-5" id="projects">
+  <!-- projects  -->
+  <section class="full-page pt-5" id="projects">
+    <div class="container">
+      <h3 class="sr-only">News</h3>
+      <div class="bg-inverse">
+        <div class="row">
+          <div class="col-md-6 p-r-0">
+            <figure class="has-light-mask m-b-0 image-effect">
+              <img
+                src="https://images.unsplash.com/photo-1442328166075-47fe7153c128?q=80&amp;fm=jpg&amp;w=1080&amp;fit=max"
+                alt="Article thumbnail" class="img-fluid">
+            </figure>
+          </div>
+          <div class="col-md-6 p-l-0">
+            <article class="center-block">
+              <span class="label label-info">Featured article</span>
+              <br>
+              <h5><a href="#">Design studio with product designer Peter Finlan <span
+                    class="icon-arrow-right"></span></a></h5>
+              <p class="m-b-0">
+                <a href="#"><span class="label label-default text-uppercase"><span class="icon-tag"></span>
+                    Design Studio</span></a>
+                <a href="#"><span class="label label-default text-uppercase"><span class="icon-time"></span> 1
+                    Hour Ago</span></a>
+              </p>
+            </article>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-md-push-6 p-l-0">
+            <figure class="has-light-mask m-b-0 image-effect">
+              <img
+                src="https://images.unsplash.com/photo-1434394673726-e8232a5903b4?q=80&amp;fm=jpg&amp;w=1080&amp;fit=max"
+                alt="Article thumbnail" class="img-fluid">
+            </figure>
+          </div>
+          <div class="col-md-6 col-md-pull-6 p-r-0">
+            <article class="center-block">
+              <span class="label label-info">Featured article</span>
+              <br>
+              <h5><a href="#">How bold, emotive imagery can connect with your audience <span
+                    class="icon-arrow-right"></span></a></h5>
+              <p class="m-b-0">
+                <a href="#"><span class="label label-default text-uppercase"><span class="icon-tag"></span>
+                    Design Studio</span></a>
+                <a href="#"><span class="label label-default text-uppercase"><span class="icon-time"></span> 1
+                    Hour Ago</span></a>
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
     <div class="container text-center">
       <h3 class="font-weight-bold  mt-5">Featured Projects</h3>
-      <button type="button" class="btn btn-primary">View More</button>
+      <button type="button" class="btn btn-primary my-3">View More</button>
       <div class="card-deck row p-lg-5">
         <div class="col-md-6 mb-5 d-flex align-items-stretch">
           <div class="card shadow-lg">
-            
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                additional
                 content. This content is a little bit longer.</p>
             </div>
             <img src="./gif/weather2.gif" class="card-img-top" alt="...">
@@ -192,10 +270,10 @@
         </div>
         <div class="col-md-6 mb-5 d-flex align-items-stretch">
           <div class="card shadow-lg">
-            
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                additional
                 content. This content is a little bit longer.</p>
             </div>
             <img src="./gif/day-planner2.gif" class="card-img-top" alt="...">
@@ -211,7 +289,6 @@
         </div>
         <div class="col-md-6 mb-5 d-flex align-items-stretch">
           <div class="card shadow-lg">
-            
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">This is a wider card with s</p>
@@ -229,10 +306,10 @@
         </div>
         <div class="col-md-6 mb-5 d-flex align-items-stretch">
           <div class="card shadow-lg">
-            
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                additional
                 content. This content is a little bit longer.</p>
             </div>
             <img src="./gif/password-generator2.gif" class="card-img-top" alt="...">
@@ -246,94 +323,103 @@
             </div>
           </div>
         </div>
-
-
       </div>
     </div>
+  </section>
 
 
-    <!--///container-->
+  <!--resume-->
 
-
-  </div>
-
-  <div class="full-page" id="resume">
+  <section class="full-page" id="resume">
     <div class="container pt-5">
       <h3 class="font-weight-bold text-center mt-5">Experience</h3>
-      <!-- <div class="section-intro mx-auto text-center mb-5 text-secondary">Below is a quick overview of my main
-        technical skill sets and tools I use. Want to find out more about my experience? 
-        <a href="resume.html">Check out my online resume</a>.
-      </div> -->
     </div>
-</div>
-    <div class="full-page pt-5" id="contact">
+
+    <!-- contact  -->
+    <section class="full-page pt-5" id="contact">
       <div class="container">
-        <h3 class="font-weight-bold text-center mt-5">Contact Me</h3>
-        <div class="container mb-4">
-          <p class="text-center mx-auto">Do you have any questions? Please do not hesitate to contact me
-            directly.
-            <ul class="text-center mb-5 list-unstyled">
-              <li><b>Email Address: </b><a href="mailto:mila.windsor@gmail.com">mila.windsor@gmail.com</a></li>
-              <li><b>Phone Number: </b> <a href="tel:6047256771 ">6047256771</a></li>
-            </ul>
-          </p>
-    
-          <div class="row">
-            <div class="col-md-8 mb-md-0 mb-5 mx-auto">
-              <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+        <div class="row align-items-center">
+          <div class="col-lg-5 offset-lg-1 mb-5 mb-lg-0 aos-init aos-animate" data-aos="fade-right">
+            <div class="bg-white p-5 shadow">
+              <div class="heading-section text-center">
+                <h2 class="mb-4">
+                  Contact Us
+                </h2>
+              </div>
+              <form method="post" name="contact-us" action="">
                 <div class="row">
-                  <div class="col-md-6">
-                    <div class="md-form mb-0">
-                      <input type="text" id="name" name="name" class="form-control">
-                      <label for="name" class="">Your name</label>
-                    </div>
+                  <div class="col-md-12 form-group">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Name">
                   </div>
-    
-                  <div class="col-md-6">
-                    <div class="md-form mb-0">
-                      <input type="text" id="email" name="email" class="form-control">
-                      <label for="email" class="">Your email</label>
-                    </div>
+                  <div class="col-md-12 form-group">
+                    <input type="text" class="form-control" id="email" name="email" placeholder="Email">
                   </div>
-                </div>
-    
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="md-form mb-0">
-                      <input type="text" id="subject" name="subject" class="form-control">
-                      <label for="subject" class="">Subject</label>
-                    </div>
+                  <div class="col-md-12 form-group">
+                    <input type="number" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Phone">
                   </div>
-                </div>
-    
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="md-form">
-                      <textarea type="text" id="message" name="message" rows="2"
-                        class="form-control md-textarea"></textarea>
-                      <label for="message">Your message</label>
-                    </div>
+                  <div class="col-md-12 form-group">
+                    <input type="text" class="form-control" id="websiteUrl" name="websiteUrl" placeholder="Website">
+                  </div>
+                  <div class="col-md-12 form-group">
+                    <textarea class="form-control" id="message" name="message" rows="6"
+                      placeholder="Your Message ..."></textarea>
+                  </div>
+                  <div class="col-md-12 text-center">
+                    <button class="btn btn-primary btn-shadow btn-lg" type="submit" name="submit">Send
+                      Message</button>
                   </div>
                 </div>
               </form>
-    
-              <div class="text-center text-md-left mt-3">
-                <button type="submit" class="btn btn-primary" onclick="submission();"> Send </button>
-              </div>
             </div>
-      </div>
+          </div>
+          <div class="col-lg-4 offset-lg-1 aos-init aos-animate" data-aos="fade-left">
+            <h2 class="mb-4">
+              Best solution to create any website. Pay once.
+            </h2>
+            <p class="mb-4">I am text block. Click edit button to change this text. Lorem ipsum dolor sit
+              amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar
+              dapibus leo.</p>
 
-    </div>
+            <ul class="list-inline py-2">
+              <li class="list-inline-item text-center">
+                <span class="lnr fs-40 lnr-rocket"></span>
+                <p>Fast delivery</p>
+              </li>
+              <li class="list-inline-item text-center">
+                <span class="lnr fs-40 lnr-magic-wand"></span>
+                <p>Awesome design</p>
+              </li>
+              <li class="list-inline-item text-center">
+                <span class="lnr fs-40 lnr-cog"></span>
+                <p>Easy to customize</p>
+              </li>
+            </ul>
+
+            <a href="#" class="btn btn-link p-0">
+              <span>PURCHASE NOW</span>
+              <span class="lnr lnr-arrow-right"></span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+
+
+
+
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-      </script>
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
       integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-      </script>
+    </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-      </script>
+    </script>
     <script src="./main.js"></script>
 </body>
 

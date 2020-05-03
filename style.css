@@ -1,7 +1,12 @@
-body {
-  /* background-color: #2e3141; */
-  /* background-color: rgba(46, 49, 65,0.5); */
+.a {
+  border: red 0.1px solid;
 }
+
+.b {
+  border: blue 0.1px solid;
+}
+
+
 
 .full-page {
   min-height: 100vh;
@@ -13,13 +18,7 @@ body {
   min-height: 50vh;
 }
 
-.a {
-  border: red 0.1px solid;
-}
 
-.b {
-  border: blue 0.1px solid;
-}
 
 h1,
 h2,
@@ -32,12 +31,12 @@ h6 {
   line-height: 1em;
   margin: 0 0 1em 0;
   text-transform: uppercase;
+  font-family: 'Work Sans', sans-serif;
 }
 
 /* start of nav bar  */
 nav {
-  background-color: #2e3842;
-  /* width:100vw */
+  background-color: #5f8faa;
 }
 
 nav img {
@@ -51,7 +50,7 @@ nav img {
   }
 
   nav.scrolled {
-    background-color:#5f8faa;
+    background-color: #5f8faa;
     -webkit-transition: background-color 1s linear;
     -ms-transition: background-color 1s linear;
     transition: background-color 1s linear;
@@ -71,6 +70,7 @@ nav img {
 
 /* navbar dropdown list in md, sm screen  */
 @media screen and (max-width: 767px) {
+
   /* remove brand logo  */
   #nav-menu ul li:first-child {
     display: none;
@@ -88,71 +88,51 @@ nav img {
 /* end of nav bar  */
 
 /* start of intro page  */
-#intro {
-  color: white;
-  font-family: "Raleway", sans-serif;
-}
-/* 
-#bg {
-  content: "";
-  background: radial-gradient( #8ac0c0,#c9e5dd);
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
-} */
-
-#intro .icon {
-  font-size: 2rem;
-  color: white;
-  margin: 0.5rem;
-}
-
 #intro h2 {
-  color: black;
+  color: white;
+  line-height: .8;
+  font-weight: bold;
   display: inline-block;
-  font-size: 2rem;
-  font-weight: 800;
-  padding: 2rem;
-  position: relative;
+  border: 15px solid #fff;
+  padding: 25px;
+  letter-spacing: 2px;
+  font-size: 9rem;
+  margin-bottom:20px;
+  opacity: 0;
+  animation: 1s fadeInFromTop cubic-bezier(0.785, 0.135, 0.15, 0.86) 1s forwards;
+  animation-delay: .5s;
+}
+
+#intro h2 span {
+  color:black;
+z-index: 3;}
+
+#intro h5 {
+  color: black;
   z-index: 1;
+  animation: 2s fadeIn cubic-bezier(0.785, 0.135, 0.15, 0.86) 1s forwards;
+  animation-delay: 1.5s;
 }
 
-#intro h2:before,
-#intro h2:after {
-  background: white;
-  content: "";
-  display: block;
-  height: 2px;
-  position: absolute;
-  width: 100%;
+#intro h2,h5 {
+  opacity: 0;
+
+}
+/* not working */
+@keyframes fadeInFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-#intro h2:before {
-  top: 0;
-  left: 0;
-}
-
-#intro h2:after {
-  bottom: 0;
-  right: 0;
-}
-
-.fade-in {
-  -webkit-animation: fadein 5s;
-  /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 5s;
-  /* Firefox < 16 */
-  -ms-animation: fadein 5s;
-  /* Internet Explorer */
-  -o-animation: fadein 5s;
-  /* Opera < 12.1 */
-  animation: fadein 5s;
-}
-
-@keyframes fadein {
+/* not working  */
+@keyframes fadeIn{
   from {
     opacity: 0;
   }
@@ -162,30 +142,61 @@ nav img {
   }
 }
 
-#intro .img-thumbnail {
-  background-color: transparent;
-  border: none;
+@media screen and (max-width:767px) {
+  #intro h1 {
+    font-size: 7rem;
+  }
 }
 
 /* end of intro page  */
 
+
+
 /* start of about me  */
-
+#about {
+  position:relative;
+  z-index:-2
+}
 #about img {
-  height: 150px;
-  width: 150px;
+  width:65%;
+  height:auto;
+
 }
 
-#about .about-me {
-  min-height: 50vh;
-  /* background-color: #c9e5dd; */
+
+#about .bg {
+  background-color: #8ac0c0;
+  height:100%;
+  width:30vw;
+  position:absolute;
+  top:0;
+  left:0;
+  z-index: 0;
+
 }
 
-/* .card img{
-  max-width: 100px;
-  height: auto;
+#about .overlay.white{
+   width: 20vw;
+   height:40vh;
+   border: 10px solid white;
+   background-color: transparent;
+   position:absolute;
+   bottom:-20px;
+   left:-20px;
+}
 
-} */
+#about .overlay.green{
+  width: 10vw;
+  height:10vh;
+  background-color: #8ac0c0;
+  position:absolute;
+  top:30px;
+  left:30vw;
+  z-index: -1;
+}
+
+/* end of about me  */
+
 
 
 #projects img {
@@ -197,17 +208,19 @@ nav img {
 
 
 
-/* page background color  */ 
+/* page background color  */
 
 
-/* page background color  */ 
+/* page background color  */
 
 #intro {
-  background: radial-gradient( #8ac0c0,#c9e5dd);
+  /* background: radial-gradient(#8ac0c0, #c9e5dd); */
+  background-color: #8ac0c0;
 }
-#about{
+
+/* #about {
   background-color: #b6d9d4;
-}
+} */
 
 #skills {
   background: linear-gradient(to bottom, #b6d9d4, #5f8faa);
@@ -216,6 +229,7 @@ nav img {
 #projects {
   background-color: #5f8faa;
 }
+
 #resume {
   background: linear-gradient(to bottom, #5f8faa, #c1ccd8);
 }
