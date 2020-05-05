@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- title bar -->
   <title>Mila Mamat</title>
-  <link rel="icon" type="image/ico" href="./logo without slogan.png" />
+  <link rel="icon" type="image/ico" href="./img/logo without slogan.png" />
   <!-- bootstrap cdn -->
-
+  <link rel="stylesheet" href="./reset.css" />
   <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
@@ -31,13 +31,13 @@
     <!-- menu button for navbar in md,sm screen  -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-menu" aria-expanded="false"
       aria-label="Toggle navigation">
-      <span><img alt="logo" src="./logo without slogan.png" /></span>
+      <span><img alt="logo" src="./img/logo without slogan.png" /></span>
     </button>
     <!-- menus in navbar, will change color based on scrollspy -->
     <div class="collapse navbar-collapse" id="nav-menu">
       <ul class="navbar-nav mx-auto mt-lg-0">
         <li class="nav-item m-2">
-          <a class="navbar-brand" href="#intro"><img alt="logo" src="./logo without slogan.png" /></a>
+          <a class="navbar-brand" href="#intro"><img alt="logo" src="./img/logo without slogan.png" /></a>
         </li>
         <li class="nav-item m-2">
           <a class="nav-link" href="#about">About</a>
@@ -78,7 +78,7 @@
         </div>
 
         <div class="col-md-6 my-auto">
-          <h1 class="font-weight-bold my-5">ABOUT ME</h1>
+          <h2 class="font-weight-bold my-5">ABOUT ME</h2>
 
           <p class="text">
             A self-motivated web developer with profound knowledge of HTML,
@@ -100,6 +100,9 @@
 
             <br />
             <br />
+            <button type="button" class="btn btn-primary badge-pill px-3">
+              View Full Resume
+            </button>
           </p>
         </div>
       </div>
@@ -108,7 +111,7 @@
 
   <!-- skills  -->
   <section class="full-page pt-5" id="skills">
-    <h1 class="font-weight-bold text-center my-5 pt-3">SKILLS</h1>
+    <h2 class="font-weight-bold text-center my-5 pt-3">SKILLS</h2>
     <div class="container p-5">
       <div class="card-deck">
         <div class="card my-5">
@@ -117,7 +120,7 @@
           </div>
           <!-- <i class="fas fa-desktop fa-2x rounded-circle icon-heading p-3"></i> -->
           <div class="card-body">
-            <h3 class="mb-2">Frontend</h3>
+            <h4 class="mb-2">Frontend</h4>
             <hr />
             <ul class="list-unstyled text-secondary text-center">
               <li>HTML</li>
@@ -134,7 +137,7 @@
             <i class="fas fa-database fa-2x mx-auto"></i>
           </div>
           <div class="card-body">
-            <h3 class="mb-2">Backend</h3>
+            <h4 class="mb-2">Backend</h4>
             <hr />
             <ul class="list-unstyled text-secondary text-center">
               <li>Node</li>
@@ -152,7 +155,7 @@
             <i class="fas fa-cogs fa-2x mx-auto"></i>
           </div>
           <div class="card-body">
-            <h3 class="mb-2">Others</h3>
+            <h4 class="mb-2">Others</h4>
             <hr />
             <ul class="list-unstyled text-secondary text-center">
               <li>Git</li>
@@ -168,17 +171,17 @@
   </section>
 
   <!-- projects  -->
-  <section class="full-page pt-5" id="projects">
-    <h1 class="font-weight-bold text-center my-5 ">RECENT PROJECTS</h1>
-    <button class="mx-auto">View More</button>
+  <section class="full-page pt-5 text-center" id="projects">
+    <h2 class="font-weight-bold text-center mt-5">RECENT PROJECTS</h2>
+    <button type="button" class="btn btn-primary badge-pill px-3 mb-2">
+      View More
+    </button>
     <div class="container">
       <!-- inverse row  -->
       <div class="row pX-5">
         <div class="col-md-6 order-md-2 p-5">
           <figure>
-            <img
-              src="https://images.unsplash.com/photo-1434394673726-e8232a5903b4?q=80&amp;fm=jpg&amp;w=1080&amp;fit=max"
-              alt="Article thumbnail" class="img-fluid" />
+            <img src="./img/planner.png" alt="Article thumbnail" class="img-fluid" />
             <div class="overlay top-right"></div>
             <div class="filter"></div>
           </figure>
@@ -186,7 +189,7 @@
 
         <div class="col-md-6 order-md-1 d-flex align-items-center p-md-5">
           <article>
-            <h2>Plan My Day</h2>
+            <h4>Plan My Day</h4>
             <p>
               A web application that helps one with organizing and planning
               their daily life conveniently
@@ -210,7 +213,6 @@
                 <li class="list-inline-item">
                   <span class="badge badge-secondary badge-pill">JavaScript</span>
                 </li>
-               
               </ul>
             </div>
             <hr />
@@ -222,19 +224,17 @@
         </div>
       </div>
       <!-- row   -->
-      <div class="row ">
+      <div class="row">
         <div class="col-md-6 p-5">
           <figure>
-            <img
-              src="https://images.unsplash.com/photo-1434394673726-e8232a5903b4?q=80&amp;fm=jpg&amp;w=1080&amp;fit=max"
-              alt="Article thumbnail" class="img-fluid" />
+            <img src="./img/employee-tracker2.png" alt="Article thumbnail" class="img-fluid" />
             <div class="overlay bottom-left"></div>
             <div class="filter"></div>
           </figure>
         </div>
         <div class="col-md-6 d-flex align-items-center p-md-5">
           <article>
-            <h2>Employee Tracker</h2>
+            <h4>Employee Tracker</h4>
             <p>
               A command-line application make it easy for non-developers to
               view and interact with information stored in databases
@@ -243,8 +243,7 @@
             <div>
               <ul class="list-inline mb-0 mx-auto">
                 <li class="list-inline-item">
-                  <span class="badge badge-secondary badge-pill">MySql
-                  </span>
+                  <span class="badge badge-secondary badge-pill">MySQL </span>
                 </li>
                 <li class="list-inline-item">
                   <span class="badge badge-secondary badge-pill">Node.js</span>
@@ -269,9 +268,7 @@
       <div class="row pX-5">
         <div class="col-md-6 order-md-2 p-5">
           <figure>
-            <img
-              src="https://images.unsplash.com/photo-1434394673726-e8232a5903b4?q=80&amp;fm=jpg&amp;w=1080&amp;fit=max"
-              alt="Article thumbnail" class="img-fluid" />
+            <img src="./img/note-taker.png" alt="Article thumbnail" class="img-fluid" />
             <div class="overlay top-right"></div>
             <div class="filter"></div>
           </figure>
@@ -279,31 +276,31 @@
 
         <div class="col-md-6 order-md-1 d-flex align-items-center p-md-5">
           <article>
-            <h2>Plan My Day</h2>
+            <h4>Note taker</h4>
             <p>
-              A web application that helps one with organizing and planning
-              their daily life conveniently
+              A web application that can be used to write, save, edit and delete notes. This application will use an
+              express backend and save and retrieve note data from a JSON file.
             </p>
 
             <div>
               <ul class="list-inline mb-0 mx-auto">
                 <li class="list-inline-item">
-                  <span class="badge badge-secondary badge-pill">Google Calendar API
+                  <span class="badge badge-secondary badge-pill">Express.js
                   </span>
                 </li>
                 <li class="list-inline-item">
-                  <span class="badge badge-secondary badge-pill">OAuth 2.0</span>
+                  <span class="badge badge-secondary badge-pill">Node.js
+                  </span>
                 </li>
                 <li class="list-inline-item">
                   <span class="badge badge-secondary badge-pill">HTML/CSS</span>
                 </li>
                 <li class="list-inline-item">
-                  <span class="badge badge-secondary badge-pill">UIkit</span>
+                  <span class="badge badge-secondary badge-pill">Bootstrap</span>
                 </li>
                 <li class="list-inline-item">
-                  <span class="badge badge-secondary badge-pill">JavaScript</span>
+                  <span class="badge badge-secondary badge-pill">jQuery</span>
                 </li>
-               
               </ul>
             </div>
             <hr />
@@ -315,35 +312,35 @@
         </div>
       </div>
       <!-- row   -->
-      <div class="row ">
+      <div class="row">
         <div class="col-md-6 p-5">
           <figure>
-            <img
-              src="https://images.unsplash.com/photo-1434394673726-e8232a5903b4?q=80&amp;fm=jpg&amp;w=1080&amp;fit=max"
-              alt="Article thumbnail" class="img-fluid" />
+            <img src="./img/employee-summary.png" alt="Article thumbnail" class="img-fluid" />
             <div class="overlay bottom-left"></div>
             <div class="filter"></div>
           </figure>
         </div>
         <div class="col-md-6 d-flex align-items-center p-md-5">
           <article>
-            <h2>Plan My Day</h2>
+            <h4>Employee Summary</h4>
             <p>
-              A command-line application make it easy for non-developers to
-              view and interact with information stored in databases
+              A Node CLI that takes in information about a software engineering team and generates an HTML webpage that
+              displays summaries for each person.
             </p>
 
             <div>
               <ul class="list-inline mb-0 mx-auto">
                 <li class="list-inline-item">
-                  <span class="badge badge-secondary badge-pill">MySql
-                  </span>
-                </li>
-                <li class="list-inline-item">
                   <span class="badge badge-secondary badge-pill">Node.js</span>
                 </li>
                 <li class="list-inline-item">
+                  <span class="badge badge-secondary badge-pill">Jest</span>
+                </li>
+                <li class="list-inline-item">
                   <span class="badge badge-secondary badge-pill">Inquirer.js</span>
+                </li>
+                <li class="list-inline-item">
+                  <span class="badge badge-secondary badge-pill">HTML/CSS</span>
                 </li>
                 <li class="list-inline-item">
                   <span class="badge badge-secondary badge-pill">JavaScript</span>
@@ -358,15 +355,8 @@
           </article>
         </div>
       </div>
-
-
-
-
-      
     </div>
   </section>
-
-
 
   <!-- contact  -->
   <section class="full-page pt-5" id="contact">
@@ -404,31 +394,29 @@
           </div>
         </div>
         <div class="col-lg-4 offset-lg-1 aos-init aos-animate" data-aos="fade-left">
-          <h2 class="mb-4">
-            Best solution to create any website. Pay once.
-          </h2>
-          <p class="mb-4">
-            I am text block. Click edit button to change this text. Lorem
-            ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
-            luctus nec ullamcorper mattis, pulvinar dapibus leo.
-          </p>
+          <h4 class="mb-4">
+            Contact Address
+          </h4>
+          <div>
+            <div class="m-3"><i class="fa fa-map-marker fa-2x mr-3"></i>Ottawa, ON</div>
+            <div class="m-3">
+              <i class="fa fa-envelope  fa-2x  mr-3"></i>
+              <a href="mailto:mila.windsor@gmail.com">mila.windsor@gmail.com</a>
+            </div>
+            <div class="m-3">
+              <i class="fa fa-phone fa-2x  mr-3"></i>
+              <a href="tel:6047256771">604-725-6771</a>
+            </div>
+          </div>
 
-          <ul class="list-inline py-2">
-            <li class="list-inline-item text-center">
-              <span class="lnr fs-40 lnr-rocket"></span>
-              <p>Fast delivery</p>
-            </li>
-            <li class="list-inline-item text-center">
-              <span class="lnr fs-40 lnr-magic-wand"></span>
-              <p>Awesome design</p>
-            </li>
-            <li class="list-inline-item text-center">
-              <span class="lnr fs-40 lnr-cog"></span>
-              <p>Easy to customize</p>
-            </li>
-          </ul>
 
-          
+          <hr />
+          <br>
+          <h4>Find me on ...</h4>
+          <ul class="social">
+            <li><a href="#" class="fab fa-linkedin-in"></a></li>
+            <li><a href="#" class="fab fa-github"></a></li>
+            <li><a href="#" class="fab fa-instagram"></a></li>
         </div>
       </div>
     </div>
