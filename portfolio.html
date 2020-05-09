@@ -7,14 +7,14 @@
   <!-- title bar -->
   <title>Mila Mamat</title>
   <link rel="icon" type="image/ico" href="./img/logo without slogan.png" />
-  
+
   <!-- reset browser to default -->
   <link rel="stylesheet" href="./reset.css" />
   <!-- bootstrap cdn -->
   <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./main.css" />
 
   <!-- Place your kit's code here -->
   <script src="https://kit.fontawesome.com/f365fc375d.js" crossorigin="anonymous"></script>
@@ -23,65 +23,81 @@
   <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all"
     rel="stylesheet" />
   <link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet" />
-
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap" rel="stylesheet" />
+  <!-- google font  -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body data-spy="scroll" data-target="#navbar" data-offset="100">
-  <!-- nav bar -->
-  <nav class="navbar navbar-expand-md fixed-top p-0" id="navbar">
-    <!-- menu button for navbar in md,sm screen  -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-menu" aria-expanded="false"
-      aria-label="Toggle navigation">
-      <span><img alt="logo" src="./img/logo without slogan.png" /></span>
-    </button>
-    <!-- menus in navbar, will change color based on scrollspy -->
-    <div class="collapse navbar-collapse" id="nav-menu">
-      <ul class="navbar-nav mx-auto mt-lg-0">
-        <li class="nav-item m-2">
-          <a class="navbar-brand" href="#intro"><img alt="logo" src="./img/logo without slogan.png" /></a>
-        </li>
-        <li class="nav-item m-2">
-          <a class="nav-link" href="#about">About</a>
-        </li>
-        <li class="nav-item m-2">
-          <a class="nav-link" href="#skills">Skills</a>
-        </li>
-        <li class="nav-item m-2">
-          <a class="nav-link" href="#projects">Project</a>
-        </li>
-        <li class="nav-item m-2">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
-        <li class="nav-item m-2 border-top">
-          <a class="nav-link d-md-none" href="#intro">Back to the top</a>
-        </li>
-      </ul>
+
+
+
+  <nav class="navbar navbar-expand-md " id="navbar">
+    <div class="container">
+
+      <a class="navbar-brand" href="#"><img alt="logo" src="./assets/img/logo without slogan.png" /></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainListDiv"
+        aria-controls="mainListDiv" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navTrigger navbar-toggler-icon">
+          <i></i>
+          <i></i>
+          <i></i>
+        </span>
+      </button>
+
+      <div class="collapse navbar-collapse p-5 p-md-0" id="mainListDiv">
+        <ul class="navbar-nav ">
+          <li class="nav-item m-2 d-md-none">
+            <a class="nav-link " href="#intro">Top</a>
+          </li>
+          <li class="nav-item m-2">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item m-2">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item m-2">
+            <a class="nav-link" href="#projects">Project</a>
+          </li>
+          <li class="nav-item m-2">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+
+        </ul>
+      </div>
     </div>
   </nav>
 
-  <!-- contents  -->
-  <section class="full-page d-flex align-items-center" id="intro">
-    <div class="container text-center">
-      <h2 class=""><span>M</span>i<br />La</h2>
-      <h5 class="text-center">WEB DEVELOPER</h5>
+
+
+  <!-- intro  -->
+  <section id="intro" class="y-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 y-center text-right">
+          <h1><span class="color-green ">M</span>ILA</h1>
+          <h4 class="font-weight-light">A FULL STACK <span class="font-weight-bold">WEB DEVELOPER</span></h4>
+          <h4 class="font-weight-bold color-gray"> &lt; / &gt;</h4>
+        </div>
+        <div class="col-md-6 p-md-5">
+          <img src="./assets/img/mila.png" alt="mila">
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- about me  -->
-  <section class="full-page pt-5 d-flex align-items-center position-relative" id="about">
-    <div class="bg mt-5"></div>
-    <div class="container mt-3">
-      <div class="row">
-        <div class="col-md-6 d-flex" id="me-img">
-          <div class="position-absolute green"></div>
-          <img src="./img/selfie.jpg" class="shadow d-block mx-auto img-thumbnail" />
-          <div class="position-absolute white"></div>
+  <section class="bg-green y-center" id="about">
+    <div class="container py-md-5 px-lg-5">
+      <h3 class="text-center my-5">ABOUT ME</h3>
+      <div class="row m-lg-5">
+        <div class="col-md-5">
+          <img src="./assets/img/photo-of-laptop-near-the-coffee-977844.jpg"
+            class="shadow d-none d-md-block mx-auto img-thumbnail" />
+          <img src="./assets/img/flatlay-photography-of-laptop-977842.jpg"
+            class="shadow d-md-none img-thumbnail mb-5" />
+
         </div>
-
-        <div class="col-md-6 my-auto">
-          <h2 class="font-weight-bold my-5">ABOUT ME</h2>
-
+        <div class="col-md-7 pl-lg-5 y-center">
           <p class="text">
             A self-motivated web developer with profound knowledge of HTML,
             CSS, Java, JavaScript,JSON, AJAX, MySQL and other related systems.
@@ -109,71 +125,88 @@
         </div>
       </div>
     </div>
+
+
   </section>
 
   <!-- skills  -->
-  <section class="full-page pt-5" id="skills">
-    <h2 class="font-weight-bold text-center my-5 pt-3">SKILLS</h2>
-    <div class="container p-5">
-      <div class="card-deck">
-        <div class="card my-5">
-          <div class="rounded-circle icon-div align-items-center">
-            <i class="fas fa-desktop fa-2x mx-auto"></i>
-          </div>
-          <!-- <i class="fas fa-desktop fa-2x rounded-circle icon-heading p-3"></i> -->
-          <div class="card-body">
-            <h4 class="mb-2">Frontend</h4>
-            <hr />
-            <ul class="list-unstyled text-secondary text-center">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Bootstrap</li>
-              <li>JavaScript</li>
-              <li>jQuery</li>
-              <li>React</li>
-            </ul>
-          </div>
-        </div>
-        <div class="card my-5">
-          <div class="rounded-circle icon-div align-items-center">
-            <i class="fas fa-database fa-2x mx-auto"></i>
-          </div>
-          <div class="card-body">
-            <h4 class="mb-2">Backend</h4>
-            <hr />
-            <ul class="list-unstyled text-secondary text-center">
-              <li>Node</li>
-              <li>Express</li>
-              <li>Ruby</li>
-              <li>REST</li>
-              <li>MySQL</li>
-              <li>MongoDB</li>
-              <li>Firebase</li>
-            </ul>
-          </div>
-        </div>
-        <div class="card my-5">
-          <div class="rounded-circle icon-div align-items-center">
-            <i class="fas fa-cogs fa-2x mx-auto"></i>
-          </div>
-          <div class="card-body">
-            <h4 class="mb-2">Others</h4>
-            <hr />
-            <ul class="list-unstyled text-secondary text-center">
-              <li>Git</li>
-              <li>Heroku</li>
-              <li>R</li>
-              <li>MicroSoft Office</li>
-              <li>PhotoShop</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <section id="skills" class="bg-gray y-center">
+    <div class="container py-md-5 px-lg-5">
+      <h3 class="mt-5">SKILLS</h3>
+      <p >I am always excited to learn more and take challenges</p>
 
+    
+        <div class="row m-5 px-md-5">
+          <div class="col-sm-4">
+            <div class="text-center m-3">
+              <i class="fas fa-desktop fa-3x color-green "></i>
+            </div>
+            <div class="card my-1">
+
+              <h4 class="card-header bg-green text-white">Frontend</h4>
+              <div class="card-body">
+                <ul class="list-unstyled text-secondary text-center">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Bootstrap</li>
+                  <li>JavaScript</li>
+                  <li>jQuery</li>
+                  <li>React</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-sm-4">
+            <div class="text-center m-3">
+              <i class="fas fa-database fa-3x color-green"></i>
+            </div>
+            <div class="card my-1">
+              <h4 class="card-header bg-green text-white">Backend</h4>
+              <div class="card-body">
+               
+            
+                <ul class="list-unstyled text-secondary text-center">
+                  <li>Node</li>
+                  <li>Express</li>
+                  <li>Ruby</li>
+                  <li>REST</li>
+                  <li>MySQL</li>
+                  <li>MongoDB</li>
+                  <li>Firebase</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-sm-4">
+            <div class="text-center m-3">
+              <i class="fas fa-cogs fa-3x color-green"></i>
+            </div>
+            <div class="card my-1">
+              <h4 class="card-header bg-green text-white">Others</h4>
+              <div class="card-body">
+                
+          
+                <ul class="list-unstyled text-secondary text-center">
+                  <li>Git</li>
+                  <li>Heroku</li>
+                  <li>R</li>
+                  <li>MicroSoft Office</li>
+                  <li>PhotoShop</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+  
+
+
+
+      </div>
+
+  </section>
   <!-- projects  -->
-  <section class="full-page pt-5 text-center" id="projects">
+  <section class="pt-5 text-center" id="projects">
     <h2 class="font-weight-bold text-center mt-5">RECENT PROJECTS</h2>
     <button type="button" class="btn btn-primary badge-pill px-3 mb-2">
       View More
@@ -361,7 +394,7 @@
   </section>
 
   <!-- contact  -->
-  <section class="full-page pt-5" id="contact">
+  <section class="pt-5" id="contact">
     <div class="container p-md-5">
       <div class="row align-items-center">
         <div class="col-lg-5 offset-lg-1 mb-5 mb-lg-0 aos-init aos-animate" data-aos="fade-right">
@@ -400,13 +433,13 @@
             Contact Address
           </h4>
           <div>
-            <div class="m-3"><i class="fa fa-map-marker fa-2x mr-3"></i>Ottawa, ON</div>
+            <div class="m-3"><i class="fa fa-map-marker fa-3x color-green mr-3"></i>Ottawa, ON</div>
             <div class="m-3">
-              <i class="fa fa-envelope  fa-2x  mr-3"></i>
+              <i class="fa fa-envelope  fa-3x color-green  mr-3"></i>
               <a href="mailto:mila.windsor@gmail.com">mila.windsor@gmail.com</a>
             </div>
             <div class="m-3">
-              <i class="fa fa-phone fa-2x  mr-3"></i>
+              <i class="fa fa-phone fa-3x color-green  mr-3"></i>
               <a href="tel:6047256771">604-725-6771</a>
             </div>
           </div>
@@ -423,6 +456,13 @@
       </div>
     </div>
   </section>
+
+
+
+
+
+
+
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">

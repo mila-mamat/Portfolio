@@ -1,0 +1,383 @@
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  background-color: white;
+}
+
+.a {
+  border:red 1px solid
+
+}
+
+
+/*-- Inspiration taken from abdo steif -->
+/* --> https://codepen.io/abdosteif/pen/bRoyMb?editors=1100*/
+
+/* Navbar section */
+
+.navbar {
+  width: 100%;
+  height: 65px;
+  position: fixed;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  z-index: 1;
+  font-weight: 600;
+
+
+}
+
+.navbar .navbar-brand {
+  display: block;
+}
+
+.navbar .navbar-brand img {
+  float: left;
+  height: 40px;
+  width: auto;
+}
+
+.navbar button:focus {
+  outline: none !important;
+}
+
+.navbar  ul li {
+  width: auto;
+  padding: 0;
+  padding-left: 3rem;
+}
+
+.navbar .nav-link{
+  color: black;
+  border:transparent solid 2px 
+}
+
+
+.navbar .nav-link.active, .navbar .nav-link:hover  {
+  color: #00e676;
+}
+
+/* Media qurey section */
+
+
+
+@media screen and (min-width: 768px) {
+.navbar .nav-link.active, .navbar .nav-link:hover  {
+  border-bottom: black solid 2px;
+}
+
+}
+@media screen and (max-width: 767px) {
+  .navbar {
+    padding-top: 20px;
+  }
+
+  .navbar #mainListDiv {
+    background-color: white;
+    /*same background color of navbar*/
+  }
+  .navbar #mainListDiv ul li {
+    padding: 0;
+  }
+}
+
+/* Animation */
+/* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
+
+.navTrigger {
+  cursor: pointer;
+  width: 30px;
+  height: 25px;
+  margin: auto;
+}
+
+.navTrigger i {
+  background-color: black;
+  border-radius: 2px;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+}
+
+.navTrigger i:nth-child(1) {
+  -webkit-animation: outT 0.8s backwards;
+  animation: outT 0.8s backwards;
+  -webkit-animation-direction: reverse;
+  animation-direction: reverse;
+}
+
+.navTrigger i:nth-child(2) {
+  margin: 5px 0;
+  -webkit-animation: outM 0.8s backwards;
+  animation: outM 0.8s backwards;
+  -webkit-animation-direction: reverse;
+  animation-direction: reverse;
+}
+
+.navTrigger i:nth-child(3) {
+  -webkit-animation: outBtm 0.8s backwards;
+  animation: outBtm 0.8s backwards;
+  -webkit-animation-direction: reverse;
+  animation-direction: reverse;
+}
+
+.navTrigger.active i:nth-child(1) {
+  -webkit-animation: inT 0.8s forwards;
+  animation: inT 0.8s forwards;
+}
+
+.navTrigger.active i:nth-child(2) {
+  -webkit-animation: inM 0.8s forwards;
+  animation: inM 0.8s forwards;
+}
+
+.navTrigger.active i:nth-child(3) {
+  -webkit-animation: inBtm 0.8s forwards;
+  animation: inBtm 0.8s forwards;
+}
+
+@-webkit-keyframes inM {
+  50% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(45deg);
+  }
+}
+
+@keyframes inM {
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+@-webkit-keyframes outM {
+  50% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(45deg);
+  }
+}
+
+@keyframes outM {
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+@-webkit-keyframes inT {
+  0% {
+    -webkit-transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    -webkit-transform: translateY(9px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translateY(9px) rotate(135deg);
+  }
+}
+
+@keyframes inT {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(9px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(9px) rotate(135deg);
+  }
+}
+
+@-webkit-keyframes outT {
+  0% {
+    -webkit-transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    -webkit-transform: translateY(9px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translateY(9px) rotate(135deg);
+  }
+}
+
+@keyframes outT {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(9px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(9px) rotate(135deg);
+  }
+}
+
+@-webkit-keyframes inBtm {
+  0% {
+    -webkit-transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    -webkit-transform: translateY(-9px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translateY(-9px) rotate(135deg);
+  }
+}
+
+@keyframes inBtm {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-9px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-9px) rotate(135deg);
+  }
+}
+
+@-webkit-keyframes outBtm {
+  0% {
+    -webkit-transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    -webkit-transform: translateY(-9px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translateY(-9px) rotate(135deg);
+  }
+}
+
+@keyframes outBtm {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-9px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-9px) rotate(135deg);
+  }
+}
+
+.affix {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: white;
+  -webkit-box-shadow: 0px 5px 24px 0px rgba(0,0,0,0.15);
+-moz-box-shadow: 0px 5px 24px 0px rgba(0,0,0,0.15);
+box-shadow: 0px 5px 24px 0px rgba(0,0,0,0.15);
+}
+
+
+
+
+/* end of navbar  */
+
+section {
+  min-height: 100vh;
+  width: 100vw;
+  padding: 0;
+}
+
+.y-center{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.x-center {
+  display:flex;
+  justify-content: center;
+}
+
+.bg-green {
+  background-color: #94bfbf;
+}
+.bg-gray {
+  background-color: #f5f5f5
+}
+.color-green {
+  color:#94bfbf
+}
+.color-gray {
+  color:#f5f5f5
+}
+
+/* start of into page  */
+
+
+#intro h1{
+  font-weight: 800;
+  font-size: 12vw;
+  line-height: 0.9;
+  margin:0;
+  opacity: 0;
+  animation: 1s fadeInFromTop cubic-bezier(0.785, 0.135, 0.15, 0.86) 1s forwards;
+  
+
+}
+#intro h4{
+  /* font-weight: 800; */
+  font-size: 2vw;
+  margin:0;
+  opacity: 0;
+  animation: 2s fadeIn cubic-bezier(0.785, 0.135, 0.15, 0.86) 1s forwards;
+  animation-delay: 2s;
+}
+
+#intro img{
+  width:70%;
+  height:auto;
+
+}
+
+@keyframes fadeInFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* not working  */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* start of about me page  */
+
+#about img{
+  max-height:380px;
+}
+
+
+#skills{
+  text-align: center;
+}
