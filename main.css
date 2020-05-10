@@ -53,6 +53,11 @@ section {
   color: #f5f5f5
 }
 
+button, .btn, .badge-secondary {
+  background-color:  #94bfbf;
+}
+
+
 .shadow {
   border: solid 1px #CCC;
   -moz-box-shadow: 1px 1px 5px #999;
@@ -76,8 +81,6 @@ section {
   transition: all 0.4s ease;
   z-index: 1;
   font-weight: 600;
-
-
 }
 
 .navbar .navbar-brand {
@@ -509,20 +512,20 @@ section {
   font-weight: bold;
 }
 
-/* elements inside article  */
-.img-container {
+/* elements inside project article  */
+.projects .img-container {
   position: relative;
   margin: 30px 0px;
   width: 100%;
   height: auto;
 }
 
-img {
+.projects img {
   width: 100%;
   height: 15rem;
 }
 
-.overlay {
+.projects .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -532,13 +535,13 @@ img {
   transition: background 1s ease;
 }
 
-.img-container:hover .overlay {
+.projects .img-container:hover .overlay {
   display: block;
   background: rgba(0, 0, 0, .7);
 }
 
 
-.buttons {
+.projects .buttons {
   position: absolute;
   width: 100%;
   top: 50%;
@@ -549,18 +552,18 @@ img {
   transition: opacity .35s ease;
 }
 
-.buttons div {
+.projects .buttons div {
   width: 100%;
   padding: 1rem;
   text-align: center;
   z-index: 1;
 }
 
-.buttons div a {
+.projects .buttons div a {
   color: white;
 }
 
-.img-container:hover .buttons {
+.projects .img-container:hover .buttons {
   opacity: 1;
 }
 
@@ -569,61 +572,35 @@ img {
 
 
 
+/* contact me page  */
 
-
-
-
-
-
-
-.social li {
-  display:inline-block
-}
-footer{
-  width:100%;
-  position:absolute;
-  bottom:0px;
-  left:0px;
-}
-
-
-
-
-
-
-/* button effect  */
-button, .btn, .badge-secondary {
-  background-color:  #94bfbf;
-}
-
-
-
-ul.social {
+#contact ul.social {
   display: flex;
 
 }
 
-ul.social li {
+#contact ul.social li {
   list-style: none;
   margin: 0 15px;
 }
 
-ul.social li a {
+
+#contact ul.social li a {
   position: relative; 
   display: block;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   text-align: center;
-  line-height: 63px;
+  line-height: 42px;
   border-radius: 50%;
-  font-size: 30px;
+  font-size: 24px;
   background-color: #94bfbf;
   color: black;
   transition: .5s;
  
 }
 
-ul.social li a::before {
+#contact ul.social li a::before {
   content: '';
   position: absolute;
   top: 0;
@@ -637,13 +614,44 @@ ul.social li a::before {
   z-index: -1;
 }
 
-ul.social li a:hover::before {
+#contact ul.social li a:hover::before {
   transform: scale(1.1);
   box-shadow: 0 0 15px #ffee10;
 }
 
-ul.social li a:hover {
+#contact ul.social li a:hover {
   color: #ffee10;
   box-shadow: 0 0 5px #ffee10;
   text-shadow: 0 0 5px #ffee10;
 }
+
+@media screen and (max-width:767px){
+  #contact {
+    text-align: center !important;
+  }
+
+  #contact .social{
+    margin-bottom:80px;
+    justify-content: center;
+    
+  
+  }
+}
+
+
+
+
+
+
+
+
+footer{
+  width:100%;
+  position:absolute;
+  bottom:0px;
+  left:0px;
+}
+
+
+
+
