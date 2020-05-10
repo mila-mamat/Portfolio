@@ -73,6 +73,7 @@ button, .btn, .badge-secondary {
 .navbar {
   width: 100vw;
   height: 65px;
+  position:fixed !important;
   text-align: center;
   padding-top: 40px;
   padding-bottom: 0px;
@@ -133,6 +134,7 @@ button, .btn, .badge-secondary {
 
   .navbar #mainListDiv {
     background-color: white;
+    margin-top:150px;
  
     /*same background color of navbar*/
   }
