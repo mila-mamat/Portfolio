@@ -97,11 +97,6 @@ button, .btn, .badge-secondary {
   outline: none !important;
 }
 
-.navbar ul.social li {
-  width: auto;
-  padding: 0;
-  padding-left: 3rem;
-}
 
 .navbar .nav-link {
   color: black;
@@ -132,9 +127,12 @@ button, .btn, .badge-secondary {
     padding-top: 20px;
   }
 
+  .navbar >*{
+    position:static !important;
+  }
   .navbar #mainListDiv {
     background-color: white;
-    margin-top:600px;
+
  
     /*same background color of navbar*/
   }
