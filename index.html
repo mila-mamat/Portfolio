@@ -31,40 +31,39 @@
 
 
 
-  <nav class="navbar  navbar-expand-md " id="navbar">
-    <div class="container x-center">
+  <nav class="navbar fixed-top navbar-expand-md px-0" id="navbar">
+    <a class="navbar-brand ml-3 ml-md-5" href="#"><img alt="logo" src="./asset/img/logo.png" /></a>
+    <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#mainListDiv"
+      aria-controls="mainListDiv" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navTrigger navbar-toggler-icon">
+        <i></i>
+        <i></i>
+        <i></i>
+      </span>
+    </button>
 
-      <a class="navbar-brand" href="#"><img alt="logo" src="./asset/img/logo.png" /></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainListDiv"
-        aria-controls="mainListDiv" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navTrigger navbar-toggler-icon">
-          <i></i>
-          <i></i>
-          <i></i>
-        </span>
-      </button>
+    <div class="collapse navbar-collapse p-5 p-md-0 " id="mainListDiv">
+      <ul class="navbar-nav ">
+        <li class="nav-item m-2 d-md-none">
+          <a class="nav-link " href="#intro">Top</a>
+        </li>
+        <li class="nav-item m-2">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item m-2">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item m-2">
+          <a class="nav-link" href="#projects">Project</a>
+        </li>
+        <li class="nav-item m-2">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
 
-      <div class="collapse navbar-collapse p-5 p-md-0 " id="mainListDiv">
-        <ul class="navbar-nav ">
-          <li class="nav-item m-2 d-md-none">
-            <a class="nav-link " href="#intro">Top</a>
-          </li>
-          <li class="nav-item m-2">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item m-2">
-            <a class="nav-link" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item m-2">
-            <a class="nav-link" href="#projects">Project</a>
-          </li>
-          <li class="nav-item m-2">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-
-        </ul>
-      </div>
+      </ul>
     </div>
+
+
   </nav>
 
 
@@ -73,15 +72,15 @@
   <section id="intro" class="y-center">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 p-md-5 order-md-2 text-center">
+        <div class="col-md-6 p-md-5 order-md-2 text-center text-md-left">
           <img src="./asset/img/mila.png" alt="mila">
         </div>
-        <div class="col-md-6 y-center text-center order-md-1">
+        <div class="col-md-6 y-center text-center text-md-right order-md-1">
           <h1><span class="color-green ">M</span>ILA</h1>
           <h4 class="font-weight-light">A FULL STACK <span class="font-weight-bold">WEB DEVELOPER</span></h4>
           <h4 class="font-weight-bold color-gray"> &lt; / &gt;</h4>
         </div>
-        
+
       </div>
     </div>
   </section>
@@ -94,8 +93,7 @@
         <div class="col-md-5">
           <img src="./asset/img/photo-of-laptop-near-the-coffee-977844.jpg"
             class="shadow d-none d-md-block mx-auto img-thumbnail" />
-          <img src="./asset/img/flatlay-photography-of-laptop-977842.jpg"
-            class="shadow d-md-none img-thumbnail mb-5" />
+          <img src="./asset/img/flatlay-photography-of-laptop-977842.jpg" class="shadow d-md-none img-thumbnail mb-5" />
 
         </div>
         <div class="col-md-7 pl-lg-5 y-center">
@@ -119,7 +117,8 @@
 
             <br />
             <br />
-            <a type="button" class="btn btn-primary badge-pill px-3" href="https://github.com/mila-mamat/Portfolio/blob/master/asset/mila-mamat-resume.pdf" target="_blank">
+            <a type="button" class="btn btn-primary badge-pill px-3"
+              href="https://github.com/mila-mamat/Portfolio/blob/master/asset/mila-mamat-resume.pdf" target="_blank">
               View Full Resume
             </a>
           </p>
@@ -267,7 +266,7 @@
               <li class="list-inline-item">
                 <span class="badge-secondary badge-pill">MySQL</span>
               </li>
-    
+
               <li class="list-inline-item">
                 <span class="badge-secondary badge-pill">Express</span>
               </li>
@@ -276,7 +275,7 @@
               </li>
             </ul>
           </div>
-          
+
         </article>
         <article class="col-md-6">
           <h4>Note Taker</h4>
@@ -348,7 +347,7 @@
           </div>
           <p>
             A Node CLI that takes in information about a software engineering team and generates an HTML webpage that
-              displays summaries for each person.
+            displays summaries for each person.
           </p>
           <hr />
           <div>
@@ -366,9 +365,9 @@
             </ul>
           </div>
         </article>
-        <article class="y-center">
-          <a href="https://github.com/mila-mamat?tab=repositories" target="_blank"></a>
-          
+        <article class="y-center ">
+          <a href="https://github.com/mila-mamat?tab=repositories" class="badge-pill" target="_blank">View More</a>
+
         </article>
       </div>
 
@@ -431,8 +430,8 @@
           <h4>Find me on ...</h4>
           <ul class="social">
             <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-            <li><a href="#" ><i class="fab fa-github"></i></a></li>
-            <li><a href="#" ><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-github"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
         </div>
       </div>
     </div>

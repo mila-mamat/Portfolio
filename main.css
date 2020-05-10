@@ -7,15 +7,17 @@ body {
 }
 
 .a {
-  border: red 1px solid
+  border: red 1px solid;
 }
 
-
-h1,h2,h3,h4,h5,h6{
-  font-family: 'Open Sans', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Open Sans", sans-serif;
 }
-
-
 
 section {
   min-height: 100vh;
@@ -39,30 +41,33 @@ section {
 }
 
 .bg-gray {
-  background-color: #f5f5f5
+  background-color: #f5f5f5;
 }
+
 .bg-white {
-  background-color:white
+  background-color: white;
 }
 
 .color-green {
-  color: #94bfbf
+  color: #94bfbf;
 }
 
 .color-gray {
-  color: #f5f5f5
+  color: #f5f5f5;
 }
 
-button, .btn, .badge-secondary {
-  background-color:  #94bfbf;
+button,
+.btn,
+.badge-secondary,
+.badge-pill {
+  background-color: #94bfbf;
 }
-
 
 .shadow {
-  border: solid 1px #CCC;
+  border: solid 1px #ccc;
   -moz-box-shadow: 1px 1px 5px #999;
   -webkit-box-shadow: 1px 1px 5px #999;
-      box-shadow: 1px 1px 5px #999;
+  box-shadow: 1px 1px 5px #999;
 }
 
 /*-- Inspiration taken from abdo steif -->
@@ -73,9 +78,8 @@ button, .btn, .badge-secondary {
 .navbar {
   width: 100vw;
   height: 65px;
-  position:fixed !important;
   text-align: center;
-  padding-top: 40px;
+  padding-top: 20px;
   padding-bottom: 0px;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
@@ -83,26 +87,19 @@ button, .btn, .badge-secondary {
   font-weight: 600;
 }
 
-.navbar .navbar-brand {
-  display: block;
-}
 
 .navbar .navbar-brand img {
-  float: left;
   height: 40px;
-  width: auto;
 }
 
 .navbar button:focus {
   outline: none !important;
 }
 
-
 .navbar .nav-link {
   color: black;
-  border: transparent solid 2px
+  border: transparent solid 2px;
 }
-
 
 .navbar .nav-link.active,
 .navbar .nav-link:hover {
@@ -110,50 +107,27 @@ button, .btn, .badge-secondary {
 }
 
 /* Media qurey section */
-
-
-
 @media screen and (min-width: 768px) {
+  .navbar {
+    padding-top: 40px;
+  }
 
   .navbar .nav-link.active,
   .navbar .nav-link:hover {
     border-bottom: black solid 2px;
   }
-
 }
 
 @media screen and (max-width: 767px) {
-  .navbar {
-    padding-top: 20px;
-  }
-
-  .navbar >*{
-    position:static !important;
-  }
   .navbar #mainListDiv {
     background-color: white;
-
- 
-    /*same background color of navbar*/
+    width: 100vw;
   }
-  .navbar #mainListDiv ul {
-    flex-direction: column;
-    width: 100%;
-    right: 0;
-    left: 0;
-    bottom: 0;
-  }
-
-  .navbar #mainListDiv ul.social li {
-    padding: 0;
-  }
-
-  
 }
+
 
 /* Animation */
 /* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
-
 .navTrigger {
   cursor: pointer;
   width: 30px;
@@ -368,16 +342,15 @@ button, .btn, .badge-secondary {
   box-shadow: 0px 5px 24px 0px rgba(0, 0, 0, 0.15);
 }
 
-
-
-
 /* end of navbar  */
+
+
 
 /* start of into page  */
 #intro h1 {
-  margin-top:30px !important;
+  margin-top: 30px !important;
   font-weight: 800;
-  font-size:20vw;
+  font-size: 20vw;
   line-height: 0.9;
   margin: 0;
   opacity: 0;
@@ -398,6 +371,8 @@ button, .btn, .badge-secondary {
   height: auto;
 }
 
+
+/* Animation */
 @keyframes fadeInFromTop {
   from {
     opacity: 0;
@@ -410,7 +385,6 @@ button, .btn, .badge-secondary {
   }
 }
 
-/* not working  */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -421,46 +395,29 @@ button, .btn, .badge-secondary {
   }
 }
 
-
+/* Media qurey section */
 @media screen and (min-width: 768px) {
-
   #intro h1 {
-    text-align:right;
     font-size: 12vw;
   }
-  
+
   #intro h4 {
-    text-align:right;
     font-size: 2vw;
   }
-
-  #intro .row .col-md-6:first-child{
-    text-align: left !important;
-  }
-
-
-
 }
-
 
 
 /* start of about me page  */
-
 #about img {
   max-height: 380px;
 }
-
 
 #skills {
   text-align: center;
 }
 
 
-
-
-
 /* start of projects  */
-
 .projects>* {
   padding: 4rem;
   width: 50%;
@@ -487,7 +444,6 @@ button, .btn, .badge-secondary {
 }
 
 @media screen and (max-width: 767px) {
-
   .projects>* {
     padding: 2rem 1rem;
     width: 100%;
@@ -514,10 +470,9 @@ button, .btn, .badge-secondary {
     margin-left: auto;
     margin-right: auto;
   }
-
 }
 
-.projects h4{
+.projects h4 {
   font-weight: bold;
 }
 
@@ -546,9 +501,8 @@ button, .btn, .badge-secondary {
 
 .projects .img-container:hover .overlay {
   display: block;
-  background: rgba(0, 0, 0, .7);
+  background: rgba(0, 0, 0, 0.7);
 }
-
 
 .projects .buttons {
   position: absolute;
@@ -558,7 +512,7 @@ button, .btn, .badge-secondary {
   transform: translate(-50%, -50%);
   text-align: center;
   opacity: 0;
-  transition: opacity .35s ease;
+  transition: opacity 0.35s ease;
 }
 
 .projects .buttons div {
@@ -577,15 +531,9 @@ button, .btn, .badge-secondary {
 }
 
 
-
-
-
-
 /* contact me page  */
-
 #contact ul.social {
   display: flex;
-
 }
 
 #contact ul.social li {
@@ -593,9 +541,8 @@ button, .btn, .badge-secondary {
   margin: 0 15px;
 }
 
-
 #contact ul.social li a {
-  position: relative; 
+  position: relative;
   display: block;
   width: 40px;
   height: 40px;
@@ -605,12 +552,11 @@ button, .btn, .badge-secondary {
   font-size: 24px;
   background-color: #94bfbf;
   color: black;
-  transition: .5s;
- 
+  transition: 0.5s;
 }
 
 #contact ul.social li a::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -618,8 +564,8 @@ button, .btn, .badge-secondary {
   height: 100%;
   border-radius: 50%;
   background: #ffee10;
-  transition: .5s;
-  transform: scale(.9);
+  transition: 0.5s;
+  transform: scale(0.9);
   z-index: -1;
 }
 
@@ -634,33 +580,21 @@ button, .btn, .badge-secondary {
   text-shadow: 0 0 5px #ffee10;
 }
 
-@media screen and (max-width:767px){
+@media screen and (max-width: 767px) {
   #contact {
     text-align: center !important;
   }
 
-  #contact .social{
-    margin-bottom:80px;
+  #contact .social {
+    margin-bottom: 80px;
     justify-content: center;
-    
-  
   }
 }
 
-
-
-
-
-
-
-
-footer{
-  width:100%;
-  position:absolute;
-  bottom:0px;
-  left:0px;
+/* start of footer  */
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
 }
-
-
-
-
