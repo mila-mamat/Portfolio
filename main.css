@@ -140,6 +140,10 @@ button, .btn, .badge-secondary {
   .navbar #mainListDiv ul.social li {
     padding: 0;
   }
+
+  .navbar #mainListDiv {
+    
+  }
 }
 
 /* Animation */
