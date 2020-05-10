@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- title bar -->
   <title>Mila Mamat</title>
-  <link rel="icon" type="image/ico" href="./img/logo without slogan.png" />
+  <link rel="icon" type="image/ico" href="./img/logo.png" />
 
   <!-- reset browser to default -->
   <link rel="stylesheet" href="./reset.css" />
@@ -34,7 +34,7 @@
   <nav class="navbar navbar-expand-md " id="navbar">
     <div class="container">
 
-      <a class="navbar-brand" href="#"><img alt="logo" src="./asset/img/logo without slogan.png" /></a>
+      <a class="navbar-brand" href="#"><img alt="logo" src="./asset/img/logo.png" /></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainListDiv"
         aria-controls="mainListDiv" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navTrigger navbar-toggler-icon">
@@ -73,14 +73,15 @@
   <section id="intro" class="y-center">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 y-center text-right">
+        <div class="col-md-6 p-md-5 order-md-2 text-center">
+          <img src="./asset/img/mila.png" alt="mila">
+        </div>
+        <div class="col-md-6 y-center text-center order-md-1">
           <h1><span class="color-green ">M</span>ILA</h1>
           <h4 class="font-weight-light">A FULL STACK <span class="font-weight-bold">WEB DEVELOPER</span></h4>
           <h4 class="font-weight-bold color-gray"> &lt; / &gt;</h4>
         </div>
-        <div class="col-md-6 p-md-5">
-          <img src="./asset/img/mila.png" alt="mila">
-        </div>
+        
       </div>
     </div>
   </section>
@@ -118,9 +119,9 @@
 
             <br />
             <br />
-            <button type="button" class="btn btn-primary badge-pill px-3">
+            <a type="button" class="btn btn-primary badge-pill px-3" href=" https://github.com/mila-mamat/Portfolio" target="_blank">
               View Full Resume
-            </button>
+            </a>
           </p>
         </div>
       </div>
@@ -130,7 +131,7 @@
   </section>
 
   <!-- skills  -->
-  <section id="skills" class="y-center">
+  <section id="skills" class="y-center bg-gray">
     <div class="container py-md-5 px-lg-5">
       <h3 class="mt-5">SKILLS</h3>
       <p>I am always excited to learn more and take challenges</p>
@@ -206,25 +207,21 @@
 
   </section>
   <!-- projects  -->
-  <section id="projects" class="y-center text-center ">
+  <section id="projects" class="y-center text-center bg-gray">
     <div class="container pt-md-5 px-lg-5">
-      <h3 class="mt-5">RECENT PROJECTS</h3>
-
-      <button type="button" class="btn btn-primary badge-pill mt-3">
-        View More
-      </button>
+      <h3 class="pt-5 mt-md-3">RECENT PROJECTS</h3>
     </div>
 
-    <div class="container p-lg-5">
-      <div class="row projects mx-lg-3">
+    <div class="container p-lg-5 ">
+      <div class="row projects mx-lg-3 bg-white">
         <article class="col-md-6">
-          <h2><a href="#">Day Planner</a></h2>
+          <h4>Day Planner</h4>
           <div class="img-container">
-            <a href="#"><img src="./asset/img/planner.png" alt="Article thumbnail" /></a>
+            <a href="#"><img src="./asset/img/planner.png" alt="Article thumbnail" class="shadow" /></a>
             <div class="overlay"></div>
             <div class="buttons">
-              <div><a href="#"> View Demo </a></div>
-              <div><a href="#"> View Code </a></div>
+              <div><a href="https://jlbuster.github.io/JMK-Project/" target="_blank"> View Demo </a></div>
+              <div><a href="https://github.com/jlbuster/JMK-Project" target="_blank"> View Code </a></div>
             </div>
           </div>
           <p>
@@ -235,69 +232,60 @@
           <div>
             <ul class="list-inline mb-0 mx-auto">
               <li class="list-inline-item">
-                <span class="badge badge-secondary badge-pill">Google Calendar API
+                <span class="badge-secondary badge-pill">Google Calendar API
                 </span>
               </li>
               <li class="list-inline-item">
-                <span class="badge badge-secondary badge-pill">OAuth 2.0</span>
+                <span class="badge-secondary badge-pill">OAuth 2.0</span>
               </li>
               <li class="list-inline-item">
-                <span class="badge badge-secondary badge-pill">HTML/CSS</span>
-              </li>
-              <li class="list-inline-item">
-                <span class="badge badge-secondary badge-pill">UIkit</span>
-              </li>
-              <li class="list-inline-item">
-                <span class="badge badge-secondary badge-pill">JavaScript</span>
+                <span class="badge-secondary badge-pill">UIkit</span>
               </li>
             </ul>
           </div>
         </article>
         <article class="col-md-6">
-          <h2><a href="#">Day Planner</a></h2>
+          <h4>Burger Orders</h4>
           <div class="img-container">
-            <a href="#"><img src="./asset/img/planner.png" alt="Article thumbnail" /></a>
+            <a href="#"><img src="./asset/img/burger.png" alt="Article thumbnail" class="shadow" /></a>
             <div class="overlay"></div>
             <div class="buttons">
-              <div><a href="#"> View Demo </a></div>
-              <div><a href="#"> View Code </a></div>
+              <div><a href="https://burger-order-list.herokuapp.com/" target="_blank"> View Demo </a></div>
+              <div><a href="https://github.com/mila-mamat/h12-burger" target="_blank"> View Code </a></div>
             </div>
           </div>
           <p>
-            A web application that helps one with organizing and planning
-            their daily life conveniently
+            A web based order tracking system to help burger store kitchen with their daily orders
           </p>
           <hr />
           <div>
             <ul class="list-inline mb-0 mx-auto">
               <li class="list-inline-item">
-                <span class="badge badge-secondary badge-pill">Google Calendar API
+                <span class="badge-secondary badge-pill">Node
                 </span>
               </li>
               <li class="list-inline-item">
-                <span class="badge badge-secondary badge-pill">OAuth 2.0</span>
+                <span class="badge-secondary badge-pill">MySQL</span>
+              </li>
+    
+              <li class="list-inline-item">
+                <span class="badge-secondary badge-pill">Express</span>
               </li>
               <li class="list-inline-item">
-                <span class="badge badge-secondary badge-pill">HTML/CSS</span>
-              </li>
-              <li class="list-inline-item">
-                <span class="badge badge-secondary badge-pill">UIkit</span>
-              </li>
-              <li class="list-inline-item">
-                <span class="badge badge-secondary badge-pill">JavaScript</span>
+                <span class="badge-secondary badge-pill">Handlebar</span>
               </li>
             </ul>
           </div>
           
         </article>
         <article class="col-md-6">
-          <h2><a href="#">Day Planner</a></h2>
+          <h4>Note Taker</h4>
           <div class="img-container">
-            <a href="#"><img src="./asset/img/planner.png" alt="Article thumbnail" /></a>
+            <a href="#"><img src="./asset/img/note-taker.png" alt="Article thumbnail" class="shadow" /></a>
             <div class="overlay"></div>
             <div class="buttons">
-              <div><a href="#"> View Demo </a></div>
-              <div><a href="#"> View Code </a></div>
+              <div><a href="https://note-taking-app-with-node.herokuapp.com/" target="_blank"> View Demo </a></div>
+              <div><a href="https://github.com/mila-mamat/h10-note-taker" target="_blank"> View Code </a></div>
             </div>
           </div>
           <p>
@@ -308,329 +296,94 @@
           <div>
             <ul class="list-inline mb-0 mx-auto">
               <li class="list-inline-item">
-                <span class="badge badge-secondary badge-pill">Google Calendar API
+                <span class="badge-secondary badge-pill">Node
                 </span>
               </li>
               <li class="list-inline-item">
-                <span class="badge badge-secondary badge-pill">OAuth 2.0</span>
+                <span class="badge-secondary badge-pill">Express</span>
               </li>
               <li class="list-inline-item">
-                <span class="badge badge-secondary badge-pill">HTML/CSS</span>
-              </li>
-              <li class="list-inline-item">
-                <span class="badge badge-secondary badge-pill">UIkit</span>
-              </li>
-              <li class="list-inline-item">
-                <span class="badge badge-secondary badge-pill">JavaScript</span>
+                <span class="badge-secondary badge-pill">jquery</span>
               </li>
             </ul>
           </div>
         </article>
         <article class="col-md-6">
-          <h2><a href="#">Day Planner</a></h2>
+          <h4>Employee Tracker</h4>
           <div class="img-container">
-            <a href="#"><img src="./asset/img/planner.png" alt="Article thumbnail" /></a>
+            <a href="#"><img src="./asset/img/employee-tracker.png" alt="Article thumbnail" class="shadow" /></a>
             <div class="overlay"></div>
             <div class="buttons">
-              <div><a href="#"> View Demo </a></div>
-              <div><a href="#"> View Code </a></div>
+              <div><a href="https://github.com/mila-mamat/h11-employee-tracker" target="_blank"> View Code </a></div>
             </div>
           </div>
           <p>
-            A web application that helps one with organizing and planning
-            their daily life conveniently
+            A command-line application to
+            view and interact with information stored in databases
           </p>
           <hr />
           <div>
             <ul class="list-inline mb-0 mx-auto">
               <li class="list-inline-item">
-                <span class="badge badge-secondary badge-pill">Google Calendar API
+                <span class="badge-secondary badge-pill">Node
                 </span>
               </li>
               <li class="list-inline-item">
-                <span class="badge badge-secondary badge-pill">OAuth 2.0</span>
+                <span class="badge-secondary badge-pill">Inquirer</span>
               </li>
               <li class="list-inline-item">
-                <span class="badge badge-secondary badge-pill">HTML/CSS</span>
-              </li>
-              <li class="list-inline-item">
-                <span class="badge badge-secondary badge-pill">UIkit</span>
-              </li>
-              <li class="list-inline-item">
-                <span class="badge badge-secondary badge-pill">JavaScript</span>
+                <span class="badge-secondary badge-pill">MySQL</span>
               </li>
             </ul>
           </div>
         </article>
         <article class="col-md-6">
-          <h2><a href="#">Day Planner</a></h2>
+          <h4>Employee Summary</h4>
           <div class="img-container">
-            <a href="#"><img src="./asset/img/planner.png" alt="Article thumbnail" /></a>
+            <a href="#"><img src="./asset/img/employee-summary.png" alt="Article thumbnail" class="shadow" /></a>
             <div class="overlay"></div>
             <div class="buttons">
-              <div><a href="#"> View Demo </a></div>
-              <div><a href="#"> View Code </a></div>
+              <div><a href="https://github.com/mila-mamat/h9-employee-summary" target="_blank"> View Code </a></div>
             </div>
           </div>
           <p>
-            A web application that helps one with organizing and planning
-            their daily life conveniently
+            A Node CLI that takes in information about a software engineering team and generates an HTML webpage that
+              displays summaries for each person.
           </p>
           <hr />
           <div>
             <ul class="list-inline mb-0 mx-auto">
               <li class="list-inline-item">
-                <span class="badge badge-secondary badge-pill">Google Calendar API
+                <span class="badge-secondary badge-pill">Node
                 </span>
               </li>
               <li class="list-inline-item">
-                <span class="badge badge-secondary badge-pill">OAuth 2.0</span>
+                <span class="badge-secondary badge-pill">Inquirer</span>
               </li>
               <li class="list-inline-item">
-                <span class="badge badge-secondary badge-pill">HTML/CSS</span>
-              </li>
-              <li class="list-inline-item">
-                <span class="badge badge-secondary badge-pill">UIkit</span>
-              </li>
-              <li class="list-inline-item">
-                <span class="badge badge-secondary badge-pill">JavaScript</span>
+                <span class="badge-secondary badge-pill">Jest</span>
               </li>
             </ul>
           </div>
         </article>
-        <article>
-          <h2><a href="#">Day Planner</a></h2>
-          <div class="img-container">
-            <a href="#"><img src="./asset/img/planner.png" alt="Article thumbnail" /></a>
-            <div class="overlay"></div>
-            <div class="buttons">
-              <div><a href="#"> View Demo </a></div>
-              <div><a href="#"> View Code </a></div>
-            </div>
-          </div>
-          <p>
-            A web application that helps one with organizing and planning
-            their daily life conveniently
-          </p>
-          <hr />
-          <div>
-            <ul class="list-inline mb-0 mx-auto">
-              <li class="list-inline-item">
-                <span class="badge badge-secondary badge-pill">Google Calendar API
-                </span>
-              </li>
-              <li class="list-inline-item">
-                <span class="badge badge-secondary badge-pill">OAuth 2.0</span>
-              </li>
-              <li class="list-inline-item">
-                <span class="badge badge-secondary badge-pill">HTML/CSS</span>
-              </li>
-              <li class="list-inline-item">
-                <span class="badge badge-secondary badge-pill">UIkit</span>
-              </li>
-              <li class="list-inline-item">
-                <span class="badge badge-secondary badge-pill">JavaScript</span>
-              </li>
-            </ul>
-          </div>
+        <article class="y-center">
+          <button type="button" class="btn btn-primary badge-pill mt-3">
+            View More
+          </button>
+          
         </article>
       </div>
 
       <!-- end of container  -->
     </div>
-
-
-
-
-
-    <!-- <div class="container">
-  
-      <div class="row pX-5">
-        <div class="col-md-6 order-md-2 p-5">
-          <figure>
-            <img src="./img/planner.png" alt="Article thumbnail" class="img-fluid" />
-            <div class="overlay top-right"></div>
-            <div class="filter"></div>
-          </figure>
-        </div>
-
-        <div class="col-md-6 order-md-1 d-flex align-items-center p-md-5">
-          <article class="col-md-6">
-            <h4>Plan My Day</h4>
-            <p>
-              A web application that helps one with organizing and planning
-              their daily life conveniently
-            </p>
-
-            <div>
-              <ul class="list-inline mb-0 mx-auto">
-                <li class="list-inline-item">
-                  <span class="badge badge-secondary badge-pill">Google Calendar API
-                  </span>
-                </li>
-                <li class="list-inline-item">
-                  <span class="badge badge-secondary badge-pill">OAuth 2.0</span>
-                </li>
-                <li class="list-inline-item">
-                  <span class="badge badge-secondary badge-pill">HTML/CSS</span>
-                </li>
-                <li class="list-inline-item">
-                  <span class="badge badge-secondary badge-pill">UIkit</span>
-                </li>
-                <li class="list-inline-item">
-                  <span class="badge badge-secondary badge-pill">JavaScript</span>
-                </li>
-              </ul>
-            </div>
-            <hr />
-            <p>
-              <a href="#" role="button" class="mr-5">View Code »</a>
-              <a href="#" role="button">View Demo »</a>
-            </p>
-          </article>
-        </div>
-      </div>
-     
-      <div class="row">
-        <div class="col-md-6 p-5">
-          <figure>
-            <img src="./img/employee-tracker2.png" alt="Article thumbnail" class="img-fluid" />
-            <div class="overlay bottom-left"></div>
-            <div class="filter"></div>
-          </figure>
-        </div>
-        <div class="col-md-6 d-flex align-items-center p-md-5">
-          <article class="col-md-6">
-            <h4>Employee Tracker</h4>
-            <p>
-              A command-line application make it easy for non-developers to
-              view and interact with information stored in databases
-            </p>
-
-            <div>
-              <ul class="list-inline mb-0 mx-auto">
-                <li class="list-inline-item">
-                  <span class="badge badge-secondary badge-pill">MySQL </span>
-                </li>
-                <li class="list-inline-item">
-                  <span class="badge badge-secondary badge-pill">Node.js</span>
-                </li>
-                <li class="list-inline-item">
-                  <span class="badge badge-secondary badge-pill">Inquirer.js</span>
-                </li>
-                <li class="list-inline-item">
-                  <span class="badge badge-secondary badge-pill">JavaScript</span>
-                </li>
-              </ul>
-            </div>
-            <hr />
-            <p>
-              <a href="#" role="button" class="mr-5">View Code »</a>
-              <a href="#" role="button">View Demo »</a>
-            </p>
-          </article>
-        </div>
-      </div>
-
-      <div class="row pX-5">
-        <div class="col-md-6 order-md-2 p-5">
-          <figure>
-            <img src="./img/note-taker.png" alt="Article thumbnail" class="img-fluid" />
-            <div class="overlay top-right"></div>
-            <div class="filter"></div>
-          </figure>
-        </div>
-
-        <div class="col-md-6 order-md-1 d-flex align-items-center p-md-5">
-          <article class="col-md-6">
-            <h4>Note taker</h4>
-            <p>
-              A web application that can be used to write, save, edit and delete notes. This application will use an
-              express backend and save and retrieve note data from a JSON file.
-            </p>
-
-            <div>
-              <ul class="list-inline mb-0 mx-auto">
-                <li class="list-inline-item">
-                  <span class="badge badge-secondary badge-pill">Express.js
-                  </span>
-                </li>
-                <li class="list-inline-item">
-                  <span class="badge badge-secondary badge-pill">Node.js
-                  </span>
-                </li>
-                <li class="list-inline-item">
-                  <span class="badge badge-secondary badge-pill">HTML/CSS</span>
-                </li>
-                <li class="list-inline-item">
-                  <span class="badge badge-secondary badge-pill">Bootstrap</span>
-                </li>
-                <li class="list-inline-item">
-                  <span class="badge badge-secondary badge-pill">jQuery</span>
-                </li>
-              </ul>
-            </div>
-            <hr />
-            <p>
-              <a href="#" role="button" class="mr-5">View Code »</a>
-              <a href="#" role="button">View Demo »</a>
-            </p>
-          </article>
-        </div>
-      </div>
-   
-      <div class="row">
-        <div class="col-md-6 p-5">
-          <figure>
-            <img src="./img/employee-summary.png" alt="Article thumbnail" class="img-fluid" />
-            <div class="overlay bottom-left"></div>
-            <div class="filter"></div>
-          </figure>
-        </div>
-        <div class="col-md-6 d-flex align-items-center p-md-5">
-          <article class="col-md-6">
-            <h4>Employee Summary</h4>
-            <p>
-              A Node CLI that takes in information about a software engineering team and generates an HTML webpage that
-              displays summaries for each person.
-            </p>
-
-            <div>
-              <ul class="list-inline mb-0 mx-auto">
-                <li class="list-inline-item">
-                  <span class="badge badge-secondary badge-pill">Node.js</span>
-                </li>
-                <li class="list-inline-item">
-                  <span class="badge badge-secondary badge-pill">Jest</span>
-                </li>
-                <li class="list-inline-item">
-                  <span class="badge badge-secondary badge-pill">Inquirer.js</span>
-                </li>
-                <li class="list-inline-item">
-                  <span class="badge badge-secondary badge-pill">HTML/CSS</span>
-                </li>
-                <li class="list-inline-item">
-                  <span class="badge badge-secondary badge-pill">JavaScript</span>
-                </li>
-              </ul>
-            </div>
-            <hr />
-            <p>
-              <a href="#" role="button" class="mr-5">View Code »</a>
-              <a href="#" role="button">View Demo »</a>
-            </p>
-          </article>
-        </div>
-      </div>
-    </div> -->
   </section>
 
   <!-- contact  -->
-  <section class="pt-5" id="contact">
-    <div class="container p-md-5">
-      <div class="row align-items-center">
+  <section class="pt-5 position-relative" id="contact">
+    <div class="container p-md-5 px-lg-5">
+      <div class="row align-items-center pt-3">
         <div class="col-lg-5 offset-lg-1 mb-5 mb-lg-0 aos-init aos-animate" data-aos="fade-right">
-          <div class="bg-white p-5 shadow">
+          <div class="bg-white p-4 shadow">
             <div class="heading-section text-center">
               <h2 class="mb-4">
                 Contact Me
@@ -648,11 +401,11 @@
                   <input type="number" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Phone" />
                 </div>
                 <div class="col-md-12 form-group">
-                  <textarea class="form-control" id="message" name="message" rows="6"
+                  <textarea class="form-control" id="message" name="message" rows="3"
                     placeholder="Your Message ..."></textarea>
                 </div>
                 <div class="col-md-12 text-center">
-                  <button class="btn btn-primary btn-shadow btn-lg" type="submit" name="submit">
+                  <button class="btn btn-primary badge-pill" type="submit" name="submit">
                     Send Message
                   </button>
                 </div>
@@ -665,28 +418,29 @@
             Contact Address
           </h4>
           <div>
-            <div class="m-3"><i class="fa fa-map-marker fa-3x color-green mr-3"></i>Ottawa, ON</div>
+            <div class="m-3"><i class="fa fa-map-marker fa-2x color-green mr-3"></i>Ottawa, ON</div>
             <div class="m-3">
-              <i class="fa fa-envelope  fa-3x color-green  mr-3"></i>
+              <i class="fa fa-envelope  fa-2x color-green  mr-3"></i>
               <a href="mailto:mila.windsor@gmail.com">mila.windsor@gmail.com</a>
             </div>
             <div class="m-3">
-              <i class="fa fa-phone fa-3x color-green  mr-3"></i>
+              <i class="fa fa-phone fa-2x color-green  mr-3"></i>
               <a href="tel:6047256771">604-725-6771</a>
             </div>
           </div>
-
-
           <hr />
           <br>
           <h4>Find me on ...</h4>
           <ul class="social">
-            <li><a href="#" class="fab fa-linkedin-in"></a></li>
-            <li><a href="#" class="fab fa-github"></a></li>
-            <li><a href="#" class="fab fa-instagram"></a></li>
+            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="#" ><i class="fab fa-github"></i></a></li>
+            <li><a href="#" ><i class="fab fa-instagram"></i></a></li>
         </div>
       </div>
     </div>
+    <footer>
+      <div class="text-center bg-green py-3">Created By Mila @ 2020</div>
+    </footer>
   </section>
 
 
