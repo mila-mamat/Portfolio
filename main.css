@@ -134,16 +134,23 @@ button, .btn, .badge-secondary {
 
   .navbar #mainListDiv {
     background-color: white;
+ 
     /*same background color of navbar*/
+  }
+  .navbar #mainListDiv ul {
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    right: 0;
+    left: 0;
+    bottom: 0;
   }
 
   .navbar #mainListDiv ul.social li {
     padding: 0;
   }
 
-  .navbar #mainListDiv {
-    
-  }
+  
 }
 
 /* Animation */
