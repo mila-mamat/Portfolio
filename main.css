@@ -61,6 +61,8 @@ button,
 .badge-secondary,
 .badge-pill {
   background-color: #94bfbf;
+  border-color:white;
+  padding:3px 6px;
 }
 
 .shadow {
@@ -536,26 +538,26 @@ button,
   display: flex;
 }
 
-#contact ul.social li {
+#contact ul li {
   list-style: none;
   margin: 0 15px;
 }
 
-#contact ul.social li a {
+#contact .glow-effect {
   position: relative;
-  display: block;
-  width: 40px;
-  height: 40px;
+  display: inline-block;
+  width: 36px;
+  height: 36px;
   text-align: center;
-  line-height: 42px;
+  line-height: 36px;
   border-radius: 50%;
-  font-size: 24px;
+  font-size: 20px;
   background-color: #94bfbf;
   color: black;
   transition: 0.5s;
 }
 
-#contact ul.social li a::before {
+#contact .glow-effect::before {
   content: "";
   position: absolute;
   top: 0;
@@ -569,12 +571,12 @@ button,
   z-index: -1;
 }
 
-#contact ul.social li a:hover::before {
+#contact .glow-effect:hover::before {
   transform: scale(1.1);
   box-shadow: 0 0 15px #ffee10;
 }
 
-#contact ul.social li a:hover {
+#contact .glow-effect:hover {
   color: #ffee10;
   box-shadow: 0 0 5px #ffee10;
   text-shadow: 0 0 5px #ffee10;
