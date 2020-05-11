@@ -28,9 +28,6 @@
 </head>
 
 <body data-spy="scroll" data-target="#navbar" data-offset="100">
-
-
-
   <nav class="navbar fixed-top navbar-expand-md px-0" id="navbar">
     <a class="navbar-brand ml-3 ml-md-5" href="#"><img alt="logo" src="./asset/img/logo.png" /></a>
     <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#mainListDiv"
@@ -41,7 +38,6 @@
         <i></i>
       </span>
     </button>
-
     <div class="collapse navbar-collapse p-5 p-md-0 " id="mainListDiv">
       <ul class="navbar-nav ">
         <li class="nav-item m-2 d-md-none">
@@ -59,15 +55,9 @@
         <li class="nav-item m-2">
           <a class="nav-link" href="#contact">Contact</a>
         </li>
-
       </ul>
     </div>
-
-
   </nav>
-
-
-
   <!-- intro  -->
   <section id="intro" class="y-center">
     <div class="container">
@@ -102,19 +92,16 @@
             CSS, Java, JavaScript,JSON, AJAX, MySQL and other related systems.
             <br />
             <br />
-
             Enjoy the process of coding, solving analytically complex problems
             and pushing my limits. Recently earned a certificate in Full Stack
             Development to find an entry-level programmer position with
             opportunities for career growth in the long-term.
             <br />
             <br />
-
             A bit more about me, self-learned and taught statistics for three
             years, and helped more than 1000 students with their academic
             success through my strong organizational, curriculum design, and
             communication skills.
-
             <br />
             <br />
             <a type="button" class="btn btn-primary badge-pill px-3"
@@ -125,8 +112,8 @@
         </div>
       </div>
     </div>
-
-<a href="https://www.pexels.com/photo/photo-of-laptop-near-the-coffee-977844/" target="_blank">Photo by Dominika Roseclay from Pexels</a>
+    <a href="https://www.pexels.com/photo/photo-of-laptop-near-the-coffee-977844/" target="_blank">Photo by Dominika
+      Roseclay from Pexels</a>
   </section>
 
   <!-- skills  -->
@@ -134,15 +121,12 @@
     <div class="container py-md-5 px-lg-5">
       <h3 class="mt-5">SKILLS</h3>
       <p>I am always excited to learn more and take challenges</p>
-
-
       <div class="row m-md-5 px-lg-5">
         <div class="col-sm-4">
           <div class="text-center m-3">
             <i class="fas fa-desktop fa-3x color-green "></i>
           </div>
           <div class="card my-1">
-
             <h4 class="card-header bg-green text-white">FRONTEND</h4>
             <div class="card-body">
               <ul class="list-unstyled text-secondary text-center">
@@ -156,7 +140,6 @@
             </div>
           </div>
         </div>
-
         <div class="col-sm-4">
           <div class="text-center m-3">
             <i class="fas fa-database fa-3x color-green"></i>
@@ -164,8 +147,6 @@
           <div class="card my-1">
             <h4 class="card-header bg-green text-white">BACKEND</h4>
             <div class="card-body">
-
-
               <ul class="list-unstyled text-secondary text-center">
                 <li>Node</li>
                 <li>Express</li>
@@ -178,7 +159,6 @@
             </div>
           </div>
         </div>
-
         <div class="col-sm-4">
           <div class="text-center m-3">
             <i class="fa fa-cog fa-3x color-green"></i>
@@ -186,8 +166,6 @@
           <div class="card my-1">
             <h4 class="card-header bg-green text-white">OTHERS</h4>
             <div class="card-body">
-
-
               <ul class="list-unstyled text-secondary text-center">
                 <li>Git</li>
                 <li>Heroku</li>
@@ -198,20 +176,16 @@
             </div>
           </div>
         </div>
-
-
-
-
       </div>
-
   </section>
   <!-- projects  -->
   <section id="projects" class="y-center text-center bg-gray">
     <div class="container p-3 pt-md-5 px-lg-5">
       <h3 class="pt-5  m-md-3">RECENT PROJECTS</h3>
-      <a href="https://github.com/mila-mamat?tab=repositories" class="btn btn-primary badge-pill px-3 mb-2" target="_blank">View More</a>
+      <a href="https://github.com/mila-mamat?tab=repositories" class="btn btn-primary badge-pill px-3 mb-2"
+        target="_blank">View More</a>
 
-       
+
     </div>
 
     <div class="container  p-3 my-3">
@@ -386,7 +360,7 @@
                 Contact Me
               </h2>
             </div>
-            <form method="post" name="contact-us" action="post">
+            <form id="contact-form">
               <div class="row">
                 <div class="col-md-12 form-group">
                   <input type="text" class="form-control" id="name" name="name" placeholder="Name" />
@@ -395,15 +369,16 @@
                   <input type="text" class="form-control" id="email" name="email" placeholder="Email" />
                 </div>
                 <div class="col-md-12 form-group">
-                  <input type="number" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Phone" />
+                  <input type="number" class="form-control" id="phoneNumber" name="phoneNumber"
+                    placeholder="Phone (optional)" />
                 </div>
                 <div class="col-md-12 form-group">
                   <textarea class="form-control" id="message" name="message" rows="3"
                     placeholder="Your Message ..."></textarea>
                 </div>
                 <div class="col-md-12 text-center">
-                  <button class="btn btn-light badge-pill px-3 disabled" type="submit" name="submit">
-                    under construction
+                  <button class="btn btn-light badge-pill px-3" type="submit" name="submit" value="send">
+                    Send Message
                   </button>
                 </div>
               </div>
@@ -417,20 +392,23 @@
           <div>
             <ul class="contact-me">
               <li><span class="glow-effect m-2 "><i class="fa fa-map-marker"></i></span> Ottawa, ON</li>
-              <li><span class="glow-effect m-2 "><i class="fa fa-envelope"></i></span> <a href="mailto:mila.windsor@gmail.com">mila.windsor@gmail.com</a></li>
-              <li><span class="glow-effect m-2 "><i class="fa fa-phone"></i></span> <a href="tel:6047256771">604-725-6771</a></li>
-            
-              </ul>
-
+              <li><span class="glow-effect m-2 "><i class="fa fa-envelope"></i></span> <a
+                  href="mailto:mila.windsor@gmail.com">mila.windsor@gmail.com</a></li>
+              <li><span class="glow-effect m-2 "><i class="fa fa-phone"></i></span> <a
+                  href="tel:6047256771">604-725-6771</a></li>
+            </ul>
           </div>
           <hr />
           <br>
           <h4>Find me on ...</h4>
           <ul class="social">
-            <li><a href="https://www.linkedin.com/in/mila-mamat-a7a344115/" target="_blank" class="glow-effect"><i class="fab fa-linkedin-in"></i></a></li>
-            <li><a href="https://github.com/mila-mamat" target="_blank" class="glow-effect"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://www.instagram.com/mila.gulmira/" target="_blank" class="glow-effect"><i class="fab fa-instagram"></i></a></li>
-            </ul>
+            <li><a href="https://www.linkedin.com/in/mila-mamat-a7a344115/" target="_blank" class="glow-effect"><i
+                  class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="https://github.com/mila-mamat" target="_blank" class="glow-effect"><i
+                  class="fab fa-github"></i></a></li>
+            <li><a href="https://www.instagram.com/mila.gulmira/" target="_blank" class="glow-effect"><i
+                  class="fab fa-instagram"></i></a></li>
+          </ul>
         </div>
       </div>
     </div>
@@ -440,12 +418,7 @@
   </section>
 
 
-
-
-
-
-
-
+  <!-- bootstrap cdn  -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
   </script>
@@ -455,7 +428,12 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
   </script>
+  <!-- emailJS cdn  -->
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+  <!-- main js link -->
   <script src="./main.js"></script>
+
 </body>
 
 </html>
